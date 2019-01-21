@@ -34,6 +34,11 @@ import {
       this.toggle = this.toggle.bind(this);
       this.handleIntro = this.handleIntro.bind(this);
       this.handleWhySwahili = this.handleWhySwahili.bind(this);
+      this.handleWhyKigali = this.handleWhyKigali.bind(this);
+      this.handleKiK = this.handleKiK.bind(this);
+      this.handleHome = this.handleHome.bind(this);
+      this.handleResources = this.handleResources.bind(this);
+      this.handleContact = this.handleContact.bind(this);
       //this.handleIntro();
     }
 
@@ -61,6 +66,36 @@ import {
       });
     }
 
+    handleWhyKigali() {
+      this.setState({
+        viewmode: 'WK'
+      });
+    }
+
+    handleKiK() {
+      this.setState({
+        viewmode: 'KiK'
+      });
+    }
+
+    handleHome() {
+      this.setState({
+        viewmode: 'Home'
+      });
+    }
+
+    handleResources() {
+      this.setState({
+        viewmode: 'Resources'
+      });
+    }
+
+    handleContact() {
+      this.setState({
+        viewmode: 'Contact'
+      });
+    }
+
   render() {
     const navigationBar = (
       <div>
@@ -81,22 +116,22 @@ import {
                   <div onClick={this.handleWhySwahili}>Why Swahili?</div>
                 </DropdownItem>
                 <DropdownItem>
-                  Why Kigali?
+                  <div onClick={this.handleWhyKigali}>Why Kigali?</div>
                 </DropdownItem>
                 <DropdownItem>
-                  Swahili in Kigali
+                  <div onClick={this.handleKiK}>Swahili in Kigali</div>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                  Home
+                  <div onClick={this.handleHome}>Home</div>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
               <NavItem>
-                <NavLink href="/components/">Swahili Resources</NavLink>
+                <NavLink onClick={this.handleResources}>Swahili Resources</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="contact_us">Contact Us</NavLink>
+                <NavLink onClick={this.handleContact}>Contact Us</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
@@ -129,6 +164,42 @@ import {
           {navigationBar}
           <br />
           <h1> This is the the why swahili page </h1>
+        </div>
+      );
+    }
+    else if (this.state.viewmode === 'WK'){
+      return (
+        <div>
+          {navigationBar}
+          <br />
+          <h1> This is the the why kigali page </h1>
+        </div>
+      );
+    }
+    else if (this.state.viewmode === 'KiK'){
+      return (
+        <div>
+          {navigationBar}
+          <br />
+          <h1> This is the the Swahili in Kigali page </h1>
+        </div>
+      );
+    }
+    else if (this.state.viewmode === 'Resources'){
+      return (
+        <div>
+          {navigationBar}
+          <br />
+          <h1> This is the the Swahili Resources page </h1>
+        </div>
+      );
+    }
+    else if (this.state.viewmode === 'Contact'){
+      return (
+        <div>
+          {navigationBar}
+          <br />
+          <h1> This is the the Contact Us page </h1>
         </div>
       );
     }
