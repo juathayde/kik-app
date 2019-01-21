@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import {
+  Button,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -14,7 +15,8 @@ import {
   DropdownItem } from 'reactstrap';
 
   import Slider from './Slider.js';
-  import MapContainer from './Map.js'
+  import MapContainer from './Map.js';
+  import PhraseBook from './PhraseBook.js';
 
   var icon = (
     <span class="logo">
@@ -163,7 +165,7 @@ import {
         <div>
           {navigationBar}
           <br />
-          <h1> This is the the why swahili page </h1>
+          <PhraseBook />
         </div>
       );
     }
@@ -190,7 +192,6 @@ import {
         <div>
           {navigationBar}
           <br />
-          <h1> This is the the Swahili Resources page </h1>
           <MapContainer />
         </div>
       );
