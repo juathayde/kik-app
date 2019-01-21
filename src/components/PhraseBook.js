@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
 import { Table, Button } from 'reactstrap';
+import Sound from 'react-sound';
 
 export default class PhraseBook extends Component {
+
+  this.handleSong = this.handleSong.bind(this);
+
   render() {
 
     const listenButton = (
-      <Button color="secondary">Listen</Button>
+      <Button color="secondary" onClick={this.handleSong}>Listen</Button>
     );
+
+    const p1_English = (
+      <Sound
+        url=
+        volume= 100
+      />
+    )
 
     return (
       <Table hover>
