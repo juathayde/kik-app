@@ -84,8 +84,26 @@ const PhraseTable = ({selectedAudio, chooseSound}) =>
             </label>
           </div>
         </td>
-        <td></td>
-        <td></td>
+        <td>
+          <div className="radio">
+            <label>
+              <input type="radio" value="pink"
+                            checked={selectedAudio === 'pink'}
+                            onChange={() => chooseSound("pink")} />
+              pink
+            </label>
+          </div>
+        </td>
+        <td>
+          <div className="radio">
+            <label>
+              <input type="radio" value="blue"
+                            checked={selectedAudio === 'blue'}
+                            onChange={() => chooseSound("blue")} />
+              blue
+            </label>
+          </div>
+        </td>
         <td></td>
       </tr>
       <tr>
@@ -110,8 +128,26 @@ const PhraseTable = ({selectedAudio, chooseSound}) =>
             </label>
           </div>
         </td>
-        <td></td>
-        <td></td>
+        <td>
+          <div className="radio">
+            <label>
+              <input type="radio" value="pink"
+                            checked={selectedAudio === 'pink'}
+                            onChange={() => chooseSound("pink")} />
+              pink
+            </label>
+          </div>
+        </td>
+        <td>
+          <div className="radio">
+            <label>
+              <input type="radio" value="blue"
+                            checked={selectedAudio === 'blue'}
+                            onChange={() => chooseSound("blue")} />
+              blue
+            </label>
+          </div>
+        </td>
         <td></td>
       </tr>
     </tbody>
@@ -160,10 +196,9 @@ export default class PhraseBook extends Component {
 		<audio ref={(yellow) => { this.yellow = yellow; }}>
 			<source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg" >
 			</source>
-		</audio>
-
-			<Button color="secondary" onClick={this.playAudio}>Listen</Button>
+		</audio>		
 			<PhraseTable selectedAudio={this.state.selectedAudio} chooseSound={this.chooseSound}/>
+      <Button color="secondary" onClick={this.playAudio}>Listen</Button>
       </div>
 
     );
