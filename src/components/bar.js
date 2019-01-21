@@ -14,6 +14,7 @@ import {
   DropdownItem } from 'reactstrap';
 
   import Slider from './Slider.js';
+  import MapContainer from './Map.js'
 
   var icon = (
     <span class="logo">
@@ -28,7 +29,7 @@ import {
 
       this.state = {
         isOpen: false,
-        viewmode: 'Home' //Intro, Why Swahili, Why Kigali, Swahili in Kigali, Swahili Resources, Contact Us
+        viewmode: 'Home'
       };
 
       this.toggle = this.toggle.bind(this);
@@ -39,7 +40,6 @@ import {
       this.handleHome = this.handleHome.bind(this);
       this.handleResources = this.handleResources.bind(this);
       this.handleContact = this.handleContact.bind(this);
-      //this.handleIntro();
     }
 
     componentDidMount() {
@@ -148,7 +148,7 @@ import {
         </div>
       );
     }
-  //Introduction & participants
+    //Introduction & participants
     else if (this.state.viewmode === 'Intro') {
       return (
         <div>
@@ -191,6 +191,7 @@ import {
           {navigationBar}
           <br />
           <h1> This is the the Swahili Resources page </h1>
+          <MapContainer />
         </div>
       );
     }
@@ -199,7 +200,21 @@ import {
         <div>
           {navigationBar}
           <br />
-          <h1> This is the the Contact Us page </h1>
+          <address align='left'>
+            <b>Middlebury Center for Social Entrepreneurship</b><br />
+            118 South Main St.<br />
+            Middlebury, VT 05753<br />
+            USA<br />
+            <a href="mailto:innovationhub@middlebury.edu">innovationhub@middlebury.edu</a>
+          </address>
+          <br />
+          <address align='left'>
+            <b> African Leadership Academy Rwanda</b><br />
+            Kigali Heights<br />
+            2nd Floor, KG 7 Ave<br />
+            Kigali, Rwanda<br />
+            <a href="mailto:info@alueducation.com">info@alueducation.com</a>
+          </address>
         </div>
       );
     }
