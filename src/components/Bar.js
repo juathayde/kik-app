@@ -8,10 +8,7 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  UncontrolledDropdown } from 'reactstrap';
 
   import Slider from './Slider.js';
   import MapContainer from './Map.js';
@@ -105,34 +102,26 @@ import {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Menu
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  <div onClick={this.handleIntro}>Intro & Participants</div>
-                </DropdownItem>
-                <DropdownItem>
-                  <div onClick={this.handleWhySwahili}>Why Swahili?</div>
-                </DropdownItem>
-                <DropdownItem>
-                  <div onClick={this.handleWhyKigali}>Why Kigali?</div>
-                </DropdownItem>
-                <DropdownItem>
-                  <div onClick={this.handleKiK}>Swahili in Kigali</div>
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  <div onClick={this.handleHome}>Home</div>
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
               <NavItem>
-                <NavLink onClick={this.handleResources}>Swahili Resources</NavLink>
+                <NavLink onClick={this.handleHome}>Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink onClick={this.handleContact}>Contact Us</NavLink>
+                <NavLink onClick={this.handleIntro}>About KiK</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={this.handleWhySwahili}>Why Swahili?</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={this.handleWhyKigali}>Why Kigali?</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={this.handleKiK}>Swahili in Kigali</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={this.handleResources}>Resources</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={this.handleContact}>Contact</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
