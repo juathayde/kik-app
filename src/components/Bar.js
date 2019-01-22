@@ -1,27 +1,26 @@
 import React, { Component } from 'react';
 import {
-  Button,
   Collapse,
   Navbar,
   NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown } from 'reactstrap';
+  NavLink } from 'reactstrap';
 
-  import Slider from './Slider.js';
-  import MapContainer from './Map.js';
-  import PhraseBook from './PhraseBook.js';
+//import Slider from './Slider.js';
+import MapContainer from './Map.js';
+import PhraseBook from './PhraseBook.js';
+import Home from './Home.js';
 
-  var icon = (
-    <span class="logo">
-      <a href="/">
-        <img src="/kik-logo.png" height="33" width="120" alt="text here" /></a>
-    </span>
-  );
+var icon = (
+  <span class="logo">
+    <a href="/">
+      <img src="/kik-logo.png" height="33" width="120" alt="text here" /></a>
+  </span>
+);
 
-  export default class NavBar extends Component {
+export default class NavBar extends Component {
     constructor(props) {
       super(props);
 
@@ -134,7 +133,7 @@ import {
         <div>
           {navigationBar}
           <br />
-          <Slider />
+          <Home />
         </div>
       );
     }

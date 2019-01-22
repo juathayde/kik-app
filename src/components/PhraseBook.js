@@ -1,9 +1,9 @@
-import React, { Component, PureComponent } from 'react';
+import React, { Component } from 'react';
 import { Table, Button } from 'reactstrap';
 import ReactDOM from 'react-dom';
-import English1 from './audio_files/e1.mp3';
-import English2 from './audio_files/e2.mp3';
-import English3 from './audio_files/e3.mp3';
+import English1 from './audio_files/e1.mp4';
+import English2 from './audio_files/e2.mp4';
+import English3 from './audio_files/e3.mp4';
 import Tanzania1 from './audio_files/t1.mp4';
 import Tanzania2 from './audio_files/t2.mp4';
 import Tanzania3 from './audio_files/t3.mp4';
@@ -257,15 +257,15 @@ export default class PhraseBook extends Component {
 
       <div className="stage">
 		<audio ref={(e1) => { this.e1 = e1; }}>
-			<source src={English1} type="audio/mp3" >
+			<source src={English1} type="audio/mp4" >
 			</source>
 		</audio>
 		<audio ref={(e2) => { this.e2 = e2; }}>
-			<source src={English2} type="audio/mp3" >
+			<source src={English2} type="audio/mp4" >
 			</source>
 		</audio>
 		<audio ref={(e3) => { this.e3 = e3; }}>
-			<source src={English3} type="audio/mp3" >
+			<source src={English3} type="audio/mp4" >
 			</source>
 		</audio>
 		<audio ref={(k1) => { this.k1 = k1; }}>
