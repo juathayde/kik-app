@@ -6,7 +6,7 @@ import SwahiliInKigali from './SwahiliInKigali.js';
 import WhyKigali from './WhyKigali.js';
 import Resources from './Resources.js';
 import About from './About.js';
-
+import Contact from './Contact.js';
 var icon = (
   <span class="logo">
     <a href="/">
@@ -182,21 +182,7 @@ export default class NavBar extends Component {
         <div>
           {navigationBar}
           <br />
-          <address align='left'>
-            <b>Middlebury Center for Social Entrepreneurship</b><br />
-            118 South Main St.<br />
-            Middlebury, VT 05753<br />
-            USA<br />
-            <a href="mailto:innovationhub@middlebury.edu">innovationhub@middlebury.edu</a>
-          </address>
-          <br />
-          <address align='left'>
-            <b> African Leadership Academy Rwanda</b><br />
-            Kigali Heights<br />
-            2nd Floor, KG 7 Ave<br />
-            Kigali, Rwanda<br />
-            <a href="mailto:info@alueducation.com">info@alueducation.com</a>
-          </address>
+          <Contact />
         </div>
       );
     }
