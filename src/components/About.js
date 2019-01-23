@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import MapContainer from './Map.js';
-import { Button, Jumbotron, Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
+
+//school logo
+//Make Institutions a tooltip
+
 
 class About extends Component {
   render() {
@@ -27,16 +30,26 @@ class About extends Component {
             <h4>Participants</h4>
               <p>Under the supervision of Middlebury’s Associate Professor of Political Science and Director of the Center for Social Entrepreneurship, Nadia Horning, the following students participated in this study:</p>
               <p>Heather Cox, Veronica Estudillo, Joshua Joseph, Lenga Kutwa, Pamella Kyomugisha, Violet Low-Beinart, Alice Magaka, Allan Muhizi, Joshua Niyobuhungiro, Zorica Radanovic, Julia S de Athayde Silva, Mariejoe Uwimana, and Martin Wairimu.</p>
-          </Col>        
+          </Col>
         </Row>
         <p>(Photo of everyone)</p>
         <Row>
-          <Col>
+          <Col align="center">
             <h4>Institutions</h4>
-              <p><b>Middlebury College</b> is a liberal arts college located in Middlebury, Vermont in the United States. Since its founding in 1800, Middlebury College has focused on its educational mission to prepare students to face the world’s most challenging problems. In addition to being a prominent liberal arts college, Middlebury College is also home to the internationally recognized summer language schools with 38 sites in various regions around the world.</p>
-              <h5>Middlebury Language Schools Mission Statement:</h5>
-                <p>“The Middlebury Language Schools welcome students from all walks of life and all parts of the global community. We provide expert education in languages and cultures through innovative, immersive instruction and the demonstrated effectiveness of the Language Pledge to enhance linguistic excellence and intercultural understanding.”</p>
-              <p><b>The African Leadership University (ALU)</b> is a network of prominent educational institutions whose mission is to produce three million African leaders over the next 50 years. ALU provides an innovative educational approach in addressing Africa’s greatest challenges by empowering students to take ownership of their own learning. In September 2017, ALU opened its second campus in Kigali, Africa’s safest and most innovative East African city.</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+              <p><b>Middlebury College</b> is a liberal arts college located in Middlebury, Vermont in the United States. Since its founding in 1800, Middlebury College has focused on its educational mission to prepare students to face the world’s most challenging problems. In addition to being a prominent liberal arts college, Middlebury College is also home to the internationally recognized <a href="http://www.middlebury.edu/ls">summer language schools</a> with 38 sites in various regions around the world.</p>
+          </Col>
+          <Col>
+            <p><b>The African Leadership University (ALU)</b> is a network of prominent educational institutions whose mission is to produce three million African leaders over the next 50 years. ALU provides an innovative educational approach in addressing Africa’s greatest challenges by empowering students to take ownership of their own learning. In September 2017, ALU opened its second campus in Kigali, Africa’s safest and most innovative East African city.</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col align="center">
+            <h4>Middlebury Language School's Mission Statement:</h4>
+              <p>“The Middlebury Language Schools welcome students from all walks of life and all parts of the global community. We provide expert education in languages and cultures through innovative, immersive instruction and the demonstrated effectiveness of the Language Pledge to enhance linguistic excellence and intercultural understanding.”</p>
           </Col>
         </Row>
       </Container>

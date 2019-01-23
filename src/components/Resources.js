@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MapContainer from './Map.js';
-import { Button, Jumbotron, Container, Row, Col } from 'reactstrap';
+import { Button, Jumbotron, Container } from 'reactstrap';
 
 class Resources extends Component {
   render() {

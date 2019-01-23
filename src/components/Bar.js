@@ -7,6 +7,7 @@ import WhyKigali from './WhyKigali.js';
 import Resources from './Resources.js';
 import About from './About.js';
 import Contact from './Contact.js';
+
 var icon = (
   <span class="logo">
     <a href="/">
@@ -102,19 +103,19 @@ export default class NavBar extends Component {
                 <NavLink onClick={this.handleAbout}>About KiK</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink onClick={this.handleWhySwahili}>Why Swahili?</NavLink>
+                <NavLink onClick={this.handleWhySwahili}>Why Kiswahili?</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink onClick={this.handleWhyKigali}>Why Kigali?</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink onClick={this.handleKiK}>Swahili in Kigali</NavLink>
+                <NavLink onClick={this.handleKiK}>Kiswahili in Kigali</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink onClick={this.handleResources}>Resources</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink onClick={this.handleContact}>Contact</NavLink>
+                <NavLink onClick={this.handleContact}>Contact Us</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
