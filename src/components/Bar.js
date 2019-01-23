@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Container, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import AudioTable from './AudioTable.js';
 import PhraseBook from './PhraseBook.js';
 import Home from './Home.js';
 import SwahiliInKigali from './SwahiliInKigali.js';
@@ -148,6 +149,8 @@ export default class NavBar extends Component {
           {navigationBar}
           <br />
           <PhraseBook />
+          <br />
+          <AudioTable />
         </div>
       );
     }
