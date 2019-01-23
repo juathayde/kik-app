@@ -11,8 +11,6 @@ import Kenya1 from './audio_files/ky1.mp4';
 import Kenya2 from './audio_files/ky2.mp4';
 import Kenya3 from './audio_files/ky3.mp4';
 
-//another table with sentences written out in every language.
-
 const {render} = ReactDOM;
 
 const SelectAudio = ({selectedAudio, chooseSound}) =>
