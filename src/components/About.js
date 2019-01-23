@@ -1,0 +1,48 @@
+import React, { Component } from 'react';
+import MapContainer from './Map.js';
+import { Button, Jumbotron, Container, Row, Col } from 'reactstrap';
+
+class About extends Component {
+  render() {
+    return (
+      <div className="About" align="center">
+      <Container align="left">
+        <Row>
+          <Col>
+            <h4>Introduction</h4>
+              <p>In 2017, President Paul Kagame declared that Swahili would soon become one of Rwanda’s official languages.  While many do not include Rwanda amongst Swahili speaking countries, a cohort of ALU and Middlebury students collaborating in January of 2019 found that this is not exactly the case. In fact, Kigali hosts a burgeoning Swahili speaking community and is ripe for the founding of the Middlebury school of Swahili in the summer of 2020.</p>
+          </Col>
+        </Row>
+        <br />
+        <Row>
+          <Col>
+            <h4>Study Overview</h4>
+              <p>In preparation for the program, five Middlebury students and eight African Leadership University students collaborated in January of 2019 to investigate where, how, and why Swahili is spoken in various places and to various degrees in Kigali.  During the study, the students designed a research project, conducted fieldwork, analyzed collected data and created this digital narrative to highlight the growing proliferation of Swahili in Kigali and provide resources for future students of Swahili.</p>
+          </Col>
+          <Col>
+            <h4>Methods</h4>
+              <p>The methods used in this study focus heavily on interviews conducted in English, French, Swahili and Kinyarwanda throughout different communities in Kigali. Conducting fieldwork in small groups, students whittled down a list of 30 communities into 4 ‘hotspot’ neighborhoods where Swahili was spoken by over 50% of residents. Once identified, students discovered different bars, restaurants and activities around those areas where future language students could engage their developing Swahili language skills outside of the classroom.</p>
+          </Col>
+          <Col>
+            <h4>Participants</h4>
+              <p>Under the supervision of Middlebury’s Associate Professor of Political Science and Director of the Center for Social Entrepreneurship, Nadia Horning, the following students participated in this study:</p>
+              <p>Heather Cox, Veronica Estudillo, Joshua Joseph, Lenga Kutwa, Pamella Kyomugisha, Violet Low-Beinart, Alice Magaka, Allan Muhizi, Joshua Niyobuhungiro, Zorica Radanovic, Julia S de Athayde Silva, Mariejoe Uwimana, and Martin Wairimu.</p>
+          </Col>        
+        </Row>
+        <p>(Photo of everyone)</p>
+        <Row>
+          <Col>
+            <h4>Institutions</h4>
+              <p><b>Middlebury College</b> is a liberal arts college located in Middlebury, Vermont in the United States. Since its founding in 1800, Middlebury College has focused on its educational mission to prepare students to face the world’s most challenging problems. In addition to being a prominent liberal arts college, Middlebury College is also home to the internationally recognized summer language schools with 38 sites in various regions around the world.</p>
+              <h5>Middlebury Language Schools Mission Statement:</h5>
+                <p>“The Middlebury Language Schools welcome students from all walks of life and all parts of the global community. We provide expert education in languages and cultures through innovative, immersive instruction and the demonstrated effectiveness of the Language Pledge to enhance linguistic excellence and intercultural understanding.”</p>
+              <p><b>The African Leadership University (ALU)</b> is a network of prominent educational institutions whose mission is to produce three million African leaders over the next 50 years. ALU provides an innovative educational approach in addressing Africa’s greatest challenges by empowering students to take ownership of their own learning. In September 2017, ALU opened its second campus in Kigali, Africa’s safest and most innovative East African city.</p>
+          </Col>
+        </Row>
+      </Container>
+      </div>
+    );
+  }
+}
+
+export default About;

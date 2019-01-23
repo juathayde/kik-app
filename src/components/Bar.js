@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink } from 'reactstrap';
-
-//import Slider from './Slider.js';
-import MapContainer from './Map.js';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import PhraseBook from './PhraseBook.js';
 import Home from './Home.js';
+import SwahiliInKigali from './SwahiliInKigali.js';
+import WhyKigali from './WhyKigali.js';
+import Resources from './Resources.js';
+import About from './About.js';
 
 var icon = (
   <span class="logo">
@@ -30,7 +24,7 @@ export default class NavBar extends Component {
       };
 
       this.toggle = this.toggle.bind(this);
-      this.handleIntro = this.handleIntro.bind(this);
+      this.handleAbout = this.handleAbout.bind(this);
       this.handleWhySwahili = this.handleWhySwahili.bind(this);
       this.handleWhyKigali = this.handleWhyKigali.bind(this);
       this.handleKiK = this.handleKiK.bind(this);
@@ -51,9 +45,9 @@ export default class NavBar extends Component {
       });
     };
 
-    handleIntro() {
+    handleAbout() {
       this.setState({
-        viewmode: 'Intro'
+        viewmode: 'About'
       });
     }
 
@@ -97,7 +91,7 @@ export default class NavBar extends Component {
     const navigationBar = (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/" brand={icon}> <b>KiK: Kiswahili in Kigali</b></NavbarBrand>
+          <NavbarBrand href="/" brand={icon}> <b>KiK</b></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -105,7 +99,7 @@ export default class NavBar extends Component {
                 <NavLink onClick={this.handleHome}>Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink onClick={this.handleIntro}>About KiK</NavLink>
+                <NavLink onClick={this.handleAbout}>About KiK</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink onClick={this.handleWhySwahili}>Why Swahili?</NavLink>
@@ -137,13 +131,13 @@ export default class NavBar extends Component {
         </div>
       );
     }
-    //Introduction & participants
-    else if (this.state.viewmode === 'Intro') {
+    //About project
+    else if (this.state.viewmode === 'About') {
       return (
         <div>
           {navigationBar}
           <br />
-          <h1> This is the intro page </h1>
+          <About />
         </div>
       );
     }
@@ -161,7 +155,7 @@ export default class NavBar extends Component {
         <div>
           {navigationBar}
           <br />
-          <h1> This is the the why kigali page </h1>
+          <WhyKigali />
         </div>
       );
     }
@@ -170,7 +164,7 @@ export default class NavBar extends Component {
         <div>
           {navigationBar}
           <br />
-          <h1> This is the the Swahili in Kigali page </h1>
+          <SwahiliInKigali />
         </div>
       );
     }
@@ -179,7 +173,7 @@ export default class NavBar extends Component {
         <div>
           {navigationBar}
           <br />
-          <MapContainer />
+          <Resources />
         </div>
       );
     }
