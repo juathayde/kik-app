@@ -148,12 +148,20 @@ export default class NavBar extends Component {
       return (
         <div>
           {navigationBar}
-          <br />
           <PhraseBook />
           <br />
           <AudioTable />
           <br />
           <PhraseTable />
+          <br />
+          <Container align="left">
+          <h6>References:</h6>
+          <li><a href="https://www.omniglot.com/writing/swahili.htm">https://www.omniglot.com/writing/swahili.htm</a></li>
+          <li><a href="https://clp.arizona.edu/swahili">https://clp.arizona.edu/swahili</a></li>
+          <li><a href="https://www.newtimes.co.rw/section/read/207927">https://www.newtimes.co.rw/section/read/207927</a></li>
+          <li><a href="https://www.britannica.com/topic/Swahili-language">https://www.britannica.com/topic/Swahili-language</a></li>
+          <li>COLEMAN, BEVERLY E. “A HISTORY OF SWAHILI.” The Black Scholar, vol. 2, no. 6, 1971, pp. 13–25. JSTOR, <a href="www.jstor.org/stable/41163481.">www.jstor.org/stable/41163481.</a></li>
+          </Container>
         </div>
       );
     }

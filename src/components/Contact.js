@@ -5,11 +5,11 @@ import { Container, Row, Col } from 'reactstrap';
 class Contact extends Component {
   render() {
     return (
-      <div className="Contact" align="center">
+      <div className="Contact">
       <Container>
         <Row>
           <Col>
-            <address align='left'>
+            <address align='center'>
               <b>Middlebury College Language School</b><br />
               Sunderland Language Center<br />
               14 Old Chapel Rd.<br />
@@ -19,7 +19,7 @@ class Contact extends Component {
             </address>
           </Col>
           <Col>
-            <address align='left'>
+            <address align='center'>
               <b> African Leadership University Rwanda</b><br />
               Kigali Heights<br />
               2nd Floor, KG 7 Ave<br />

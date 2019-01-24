@@ -17,7 +17,7 @@ class PhraseTable extends Component {
         <tbody>
             <tr>
               <th scope="row">English</th>
-              <td>I will return home soon.</td>
+              <td>I will return home soon.<Button color="primary">Listen</Button></td>
               <td>They will put money on our account Thursday morning.</td>
               <td>I reached work late and my boss was upset.</td>
             </tr>

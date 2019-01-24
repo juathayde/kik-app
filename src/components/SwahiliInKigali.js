@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Button, Container, Row, Col, Media, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
+import { Button, Container, Row, Col, Media, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import MigrationImg from "./image_files/migration.png";
 import BusinessImg from "./image_files/business.png";
 import CommunityImg from "./image_files/community.png";
 import IslamImg from "./image_files/islam.png";
+import Uncle from './image_files/uncle.jpg';
 
 var imgStyle = {
   maxHeight: '128px',
@@ -45,6 +46,10 @@ class SwahiliInKigali extends Component {
   render() {
     return (
       <div>
+        <Container align="center">
+          <h4>Why do people speak Kiswahili in Kigali?</h4>
+          <p>Click on the icons in each section to hear their stories:</p>
+        </Container>
         <Container align="left" style={conStyle}>
           <Row>
             <Media left href="migration">
@@ -60,7 +65,9 @@ class SwahiliInKigali extends Component {
                 <Modal isOpen={this.state.modal} modalTransition={{ timeout: 700 }} backdropTransition={{ timeout: 1300 }} toggle={this.toggle}>
                   <ModalHeader toggle={this.toggle}>Interview with Allen’s uncle</ModalHeader>
                   <ModalBody>
-                  Allen’s Uncle owns and runs three bars in Kigali along with a number of side projects. He speaks Congolese Swahili fluently because he spent the first 18 years of his life in the Kivu region of the Congo. Although Allen’s Uncle’s parents are Rwandan, they fled with his grandparents to the Congo during the 1950s due to the first waves of ethnic violence. Allen’s uncle returned to Rwanda in 1998 and now frequently travels to Kenya, Tanzania, and Uganda for business where he uses Swahili frequently. He now says that he understands the great value of learning other languages and is excited about the prospect of the Middlebury language school.                   </ModalBody>
+                  <img src={Uncle} style={imgStyle} alt="uncle_img"></img>
+                  Allen’s Uncle owns and runs three bars in Kigali along with a number of side projects. He speaks Congolese Swahili fluently because he spent the first 18 years of his life in the Kivu region of the Congo. Although Allen’s Uncle’s parents are Rwandan, they fled with his grandparents to the Congo during the 1950s due to the first waves of ethnic violence. Allen’s uncle returned to Rwanda in 1998 and now frequently travels to Kenya, Tanzania, and Uganda for business where he uses Swahili frequently. He now says that he understands the great value of learning other languages and is excited about the prospect of the Middlebury language school.
+                  </ModalBody>
               </Modal>
             </Col>
           </Row>
@@ -73,7 +80,7 @@ class SwahiliInKigali extends Component {
             <Col>
               <Media body>
                 <Media heading>Business</Media>
-                Swahili has been called the lingua franca of trade in Rwanda. Oftentimes business people learn Swahili in order to better conduct business with Swahili speakers in other countries. This means that a lot of shop owners speak good Swahili.
+                Swahili has been called the lingua franca of trade in Rwanda. Oftentimes business people learn Swahili in order to better conduct business with Swahili speakers in other countries. This means that a lot of shop owners speak Swahili well.
               </Media>
             </Col>
             </Row>

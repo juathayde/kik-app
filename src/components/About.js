@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import MiddBanner from './image_files/midd_banner.png';
+import ALUBanner from './image_files/alu_banner.png';
 
 //school logo
-//Make Institutions a tooltip
 
+var imgStyle = {
+  maxHeight: '128px',
+  maxWidth: '490px',
+  align: 'middle',
+};
 
 class About extends Component {
   render() {
@@ -28,24 +34,28 @@ class About extends Component {
           </Col>
           <Col>
             <h4>Participants</h4>
-              <p>Under the supervision of Middlebury’s Associate Professor of Political Science and Director of the Center for Social Entrepreneurship, Nadia Horning, the following students participated in this study:</p>
+              <p>Under Professor Nadia Horning's supervision, the following students participated in this study:</p>
               <p>Heather Cox, Veronica Estudillo, Joshua Joseph, Lenga Kutwa, Pamella Kyomugisha, Violet Low-Beinart, Alice Magaka, Allan Muhizi, Joshua Niyobuhungiro, Zorica Radanovic, Julia S de Athayde Silva, Mariejoe Uwimana, and Martin Wairimu.</p>
           </Col>
         </Row>
         <p>(Photo of everyone)</p>
         <Row>
           <Col align="center">
-            <h4>Institutions</h4>
+            <h3>Institutions</h3>
+            <br />
           </Col>
         </Row>
         <Row>
           <Col>
+              <img src={MiddBanner} alt="midd_image" style={imgStyle}></img>
               <p><b>Middlebury College</b> is a liberal arts college located in Middlebury, Vermont in the United States. Since its founding in 1800, Middlebury College has focused on its educational mission to prepare students to face the world’s most challenging problems. In addition to being a prominent liberal arts college, Middlebury College is also home to the internationally recognized <a href="http://www.middlebury.edu/ls">summer language schools</a> with 38 sites in various regions around the world.</p>
           </Col>
           <Col>
-            <p><b>The African Leadership University (ALU)</b> is a network of prominent educational institutions whose mission is to produce three million African leaders over the next 50 years. ALU provides an innovative educational approach in addressing Africa’s greatest challenges by empowering students to take ownership of their own learning. In September 2017, ALU opened its second campus in Kigali, Africa’s safest and most innovative East African city.</p>
+            <img src={ALUBanner} alt="alu_image" style={imgStyle}></img>
+             <p><b>The African Leadership University (ALU)</b> is a network of prominent educational institutions whose mission is to produce three million African leaders over the next 50 years. ALU provides an innovative educational approach in addressing Africa’s greatest challenges by empowering students to take ownership of their own learning. In September 2017, ALU opened its second campus in Kigali, Africa’s safest and most innovative East African city.</p>
           </Col>
         </Row>
+        <br />
         <Row>
           <Col align="center">
             <h4>Middlebury Language School's Mission Statement:</h4>
