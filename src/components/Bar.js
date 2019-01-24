@@ -11,11 +11,11 @@ import About from './About.js';
 import Contact from './Contact.js';
 import KiKLogo from './image_files/kik-logo.png';
 
-var icon = (
-  <span class="logo">
-    <img src={KiKLogo} height="33" width="120" alt="logo_img" />
-  </span>
-);
+// var icon = (
+//   <span class="logo">
+//     <img src={KiKLogo} height="33" width="120" alt="logo_img" />
+//   </span>
+// );
 
 export default class NavBar extends Component {
     constructor(props) {
@@ -94,7 +94,7 @@ export default class NavBar extends Component {
     const navigationBar = (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/" brand={icon}> <b>KiK</b></NavbarBrand>
+          <NavbarBrand href="/" brand={KiKLogo}> <b>KiK</b></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>

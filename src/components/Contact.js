@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Button, Container, Row, Col } from 'reactstrap';
-import './Contact.css';
 
 const linkStyle = {
   color: 'black'
