@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Collapse, Container, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import AudioTable from './AudioTable.js';
-import PhraseBook from './PhraseBook.js';
+import WhySwahili from './WhySwahili.js';
 import PhraseTable from './PhraseTable.js';
 import Home from './Home.js';
 import SwahiliInKigali from './SwahiliInKigali.js';
@@ -9,11 +9,11 @@ import WhyKigali from './WhyKigali.js';
 import Resources from './Resources.js';
 import About from './About.js';
 import Contact from './Contact.js';
+import KiKLogo from './image_files/kik-logo.png';
 
 var icon = (
   <span class="logo">
-    <a href="/">
-      <img src="/kik-logo.png" height="33" width="120" alt="text here" /></a>
+    <img src={KiKLogo} height="33" width="120" alt="logo_img" />
   </span>
 );
 
@@ -148,14 +148,15 @@ export default class NavBar extends Component {
       return (
         <div>
           {navigationBar}
-          <PhraseBook />
+          <br />
+          <WhySwahili />
           <br />
           <AudioTable />
           <br />
-          <PhraseTable />
+          //PhraseTable
           <br />
           <Container align="left">
-          <h6>References:</h6>
+          <h4>References:</h4>
           <li><a href="https://www.omniglot.com/writing/swahili.htm">https://www.omniglot.com/writing/swahili.htm</a></li>
           <li><a href="https://clp.arizona.edu/swahili">https://clp.arizona.edu/swahili</a></li>
           <li><a href="https://www.newtimes.co.rw/section/read/207927">https://www.newtimes.co.rw/section/read/207927</a></li>

@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Button, Container, Row, Col } from 'reactstrap';
+import './Contact.css';
 
+const linkStyle = {
+  color: 'black'
+};
 
 class Contact extends Component {
   render() {
@@ -10,17 +14,18 @@ class Contact extends Component {
         <Row>
           <Col>
             <address align='center'>
-              <b>Middlebury College Language School</b><br />
+              <b><a href="http://www.middlebury.edu/ls" style={linkStyle}>Middlebury College Language School</a></b><br />
               Sunderland Language Center<br />
               14 Old Chapel Rd.<br />
               Middlebury, VT 05753<br />
               USA<br />
               <a href="mailto:languages@middlebury.eduu">languages@middlebury.edu</a>
+              <br />
             </address>
           </Col>
           <Col>
             <address align='center'>
-              <b> African Leadership University Rwanda</b><br />
+              <b><a href="https://www.alueducation.com/campuses/alu-rwanda/" style={linkStyle}>African Leadership University Rwanda</a></b><br />
               Kigali Heights<br />
               2nd Floor, KG 7 Ave<br />
               Kigali, Rwanda<br />

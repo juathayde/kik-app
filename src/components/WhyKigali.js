@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
-import image from './whyKigali.png';
+import Image1 from './image_files/whyKigali1.JPG';
+import Image2 from './image_files/whyKigali2.JPG';
 
-//full page
+var imgStyle = {
+  maxHeight: '650px',
+  maxWidth: '650px',
+  align: 'middle',
+}
+
 class WhyKigali extends Component {
   render() {
     return (
       <div className="WhyKigali" align="center">
-      <img src={image} alt=""/>
+      <img src={Image1} alt="" style={imgStyle} />
+      <br />
+      <img src={Image2} alt="" style={imgStyle} />
       </div>
     );
   }

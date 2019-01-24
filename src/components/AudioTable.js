@@ -14,6 +14,8 @@ import Kenya3 from './audio_files/ky3.mp4';
 const {render} = ReactDOM;
 
 const SelectAudio = ({selectedAudio, chooseSound}) =>
+  <div>
+  <h4>Listen to different dialects of Swahili!</h4>
   <Table hover>
     <thead align='left'>
       <tr>
@@ -28,16 +30,16 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
     </thead>
     <tbody align='left'>
       <tr>
-        <th scope="row">1</th>
-        <td>
+        <th scope="row">
           <div className="radio">
             <label>
               <input type="radio" value="e1"
                             checked={selectedAudio === 'e1'}
-                            onChange={() => chooseSound('e1')} /> I will return home soon.
+                            onChange={() => chooseSound('e1')} />
             </label>
           </div>
-        </td>
+        </th>
+        <td>I will return home soon.</td>
         <td>
           <div className="radio">
             <label>
@@ -85,16 +87,16 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         </td>
       </tr>
       <tr>
-        <th scope="row">2</th>
-        <td>
+        <th scope="row">
           <div className="radio">
             <label>
               <input type="radio" value="e2"
                             checked={selectedAudio === 'e2'}
-                            onChange={() => chooseSound('e2')} /> They will put money on our account Thursday morning.
+                            onChange={() => chooseSound('e2')} />
             </label>
           </div>
-        </td>
+        </th>
+        <td>They will put money on our account Thursday morning.</td>
         <td>
           <div className="radio">
             <label>
@@ -142,16 +144,16 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         </td>
       </tr>
       <tr>
-        <th scope="row">3</th>
-        <td>
+        <th scope="row">
           <div className="radio">
             <label>
               <input type="radio" value="e3"
                             checked={selectedAudio === 'e3'}
-                            onChange={() => chooseSound('e3')} /> I reached work late and my boss was upset.
+                            onChange={() => chooseSound('e3')} />
             </label>
           </div>
-        </td>
+        </th>
+        <td>I reached work late and my boss was upset.</td>
         <td>
           <div className="radio">
             <label>
@@ -200,6 +202,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
       </tr>
     </tbody>
   </Table>
+  </div>
 
 export default class AudioTable extends Component {
 
