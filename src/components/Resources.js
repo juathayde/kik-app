@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import MapContainer from './Map.js';
 import { Container, Col, Row } from 'reactstrap';
+import ALUBanner from './image_files/alu_banner.png';
+
+var imgStyle = {
+  maxHeight: '650px',
+  maxWidth: '400px',
+  align: 'middle',
+}
 
 class Resources extends Component {
   render() {
@@ -40,9 +47,30 @@ class Resources extends Component {
             <li><a href="https://www.youtube.com/watch?v=_xZcO8DtYl0">Diamond Platnum- Kamwambie</a></li>
           </Col>
         </Row>
+        </Container>
         <br />
+        <Container align='left'>
         <h4>Organizations</h4>
-          <p>Major international and local organizations work in Kigali, dealing with various aspects such as education, women’s empowerment, health awareness and skills development. While each organization in Kigali has different goals, volunteer and internship opportunities are available for Swahili speakers in many of them. As the host institution, <b>ALU Rwanda</b> offers internship opportunities for students, including Swahili speakers, in various fields and locations. Internships range from medical care, to law and human rights, to social entrepreneurship and much more. Besides ALU, international and local organizations are always looking for talent to strengthen their team and pursue significant opportunities for growth. To name a few: <b>TEACH Rwanda</b> is an international organization working with volunteers and teachers to transform early childhood teacher education. <b>Nyamirambo Women’s Center</b> is a local organization that offers free vocational training for disadvantaged women in the community. <b>Centre Marembo</b> is a local organization that aims to improve the lives of disadvantaged youth in Kigali through training and educational support. Additionally, some local primary and secondary schools welcome partnerships with ALU students to promote knowledge creation and sharing in the classrooms.</p>
+          <Row>
+            <Col>
+              <p>Major international and local organizations work in Kigali, dealing with various aspects such as education, women’s empowerment, health awareness and skills development. While each organization in Kigali has different goals, volunteer and internship opportunities are available for Swahili speakers in many of them.</p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <img src={ALUBanner} style={imgStyle} />
+            </Col>
+            <Col>
+              <p>As the host institution, <b>ALU Rwanda</b> offers internship opportunities for students, including Swahili speakers, in various fields and locations. Internships range from medical care, to law and human rights, to social entrepreneurship and much more.</p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+            <p>Besides ALU, international and local organizations are always looking for talent to strengthen their team and pursue significant opportunities for growth. To name a few: <b>TEACH Rwanda</b> is an international organization working with volunteers and teachers to transform early childhood teacher education.</p>
+            <p><b>Nyamirambo Women’s Center</b> is a local organization that offers free vocational training for disadvantaged women in the community.</p>
+            <p><b>Centre Marembo</b> is a local organization that aims to improve the lives of disadvantaged youth in Kigali through training and educational support. Additionally, some local primary and secondary schools welcome partnerships with ALU students to promote knowledge creation and sharing in the classrooms.</p>
+            </Col>
+          </Row>
         </Container>
       </Container>
     );

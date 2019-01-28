@@ -24,24 +24,20 @@ class About extends Component {
         <Row>
           <Col>
             <h4>Introduction</h4>
-              <p>In 2017, President Paul Kagame declared that Swahili would soon become one of Rwanda’s official languages.  While many do not include Rwanda amongst Swahili speaking countries, a cohort of ALU and Middlebury students collaborating in January of 2019 found that this is not exactly the case. In fact, Kigali hosts a burgeoning Swahili speaking community and is ripe for the founding of the Middlebury school of Swahili in the summer of 2020.</p>
+              <p>Despite being internationally renowned for its rigorous and diverse foreign language instruction programs, Middlebury College has never before offered an immersive course in a native African language. In an effort to address this conspicuous lacuna, the college plans to open a Middlebury School of Kiswahili in summer 2020 at the African Leadership University in Kigali, Rwanda.
+              In preparation for  this new language program, a team of 5 Middlebury students and 8 ALU students collaborated to investigate where, how, and why Kiswahili is spoken in various places and to various degrees in Kigali.</p>
           </Col>
         </Row>
         <br />
         <Row>
           <Col>
-            <h4>Study Overview</h4>
-              <p>In preparation for the program, five Middlebury students and eight African Leadership University students collaborated in January of 2019 to investigate where, how, and why Swahili is spoken in various places and to various degrees in Kigali.  During the study, the students designed a research project, conducted fieldwork, analyzed collected data and created this digital narrative to highlight the growing proliferation of Swahili in Kigali and provide resources for future students of Swahili.</p>
-          </Col>
-          <Col>
             <h4>Methods</h4>
-              <p>The methods used in this study focus heavily on interviews conducted in English, French, Swahili and Kinyarwanda throughout different communities in Kigali. Conducting fieldwork in small groups, students whittled down a list of 30 communities into 4 ‘hotspot’ neighborhoods where Swahili was spoken by over 50% of residents. Once identified, students discovered different bars, restaurants and activities around those areas where future language students could engage their developing Swahili language skills outside of the classroom.</p>
+              <p>Over the course of  four weeks under the supervision of Professor Nadia Horning, Middlebury and ALU students collaborated to design a research project, conduct fieldwork, and analyze data to identify areas where Kiswahili students could practice Kiswahili in and around Kigali.</p>
+              <p>Data collection relied heavily on interviews conducted in English, French, Kiswahili, and Kinyarwanda throughout different Kigali communities. Conducting fieldwork in small groups, students whittled down a list of 30 communities into 4 ‘hotspot’ neighborhoods where Kiswahili is spoken by at least 50% of residents. Once Kiswahili-speaking neighborhoods were  identified, students investigated opportunities to practice their target language outside the classroom. Restaurants, bars and other places of entertainment, schools, places of worship, shops, and alternative opportunities for social interaction were identified.</p>
           </Col>
-        </Row>
-        <Row>
           <Col>
             <h4>Participants</h4>
-              <p>Under Professor Nadia Horning's supervision, the following students participated in this study:</p>
+              <p>The KiK team included the following students:</p>
               <p>Heather Cox, Veronica Estudillo, Joshua Joseph, Lenga Kutwa, Pamella Kyomugisha, Violet Low-Beinart, Alice Magaka, Allan Muhizi, Joshua Niyobuhungiro, Zorica Radanovic, Julia S de Athayde Silva, Mariejoe Uwimana, and Martin Wairimu.</p>
           </Col>
         </Row>

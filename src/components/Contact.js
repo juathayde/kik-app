@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
 import { Button, Container, Row, Col } from 'reactstrap';
+import MiddBanner from './image_files/midd_banner.png';
+import ALUBanner from './image_files/alu_banner.png';
 
 const linkStyle = {
   color: 'black'
+};
+
+var bannerStyle = {
+  maxHeight: '128px',
+  maxWidth: '490px',
+  align: 'middle',
 };
 
 class Contact extends Component {
@@ -13,6 +21,7 @@ class Contact extends Component {
         <Row>
           <Col>
             <address align='center'>
+              <img src={MiddBanner} style={bannerStyle}></img><br />
               <b><a href="http://www.middlebury.edu/ls" style={linkStyle}>Middlebury College Language School</a></b><br />
               Sunderland Language Center<br />
               14 Old Chapel Rd.<br />
@@ -23,6 +32,7 @@ class Contact extends Component {
           </Col>
           <Col>
             <address align='center'>
+              <img src={ALUBanner} style={bannerStyle}></img><br />
               <b><a href="https://www.alueducation.com/campuses/alu-rwanda/" style={linkStyle}>African Leadership University Rwanda</a></b><br />
               Kigali Heights<br />
               2nd Floor, KG 7 Ave<br />
