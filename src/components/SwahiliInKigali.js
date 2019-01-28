@@ -10,7 +10,7 @@ import Kayipabo from './image_files/Kayipabo.jpg';
 import Mbonyitegeko from './image_files/Mbonyitegeko.JPG';
 import Elders from './image_files/elders.JPG';
 import Isa from './image_files/Isa.JPG';
-//import Yousif from './image_files/Yousif.JPG';
+import Yousif from './image_files/Yousif.JPG';
 
 
 var imgStyle = {
@@ -26,6 +26,11 @@ var imgInterviewStyle = {
 const conStyle = {
   margin: '40px',
   border: '5px solid gray'
+};
+
+const linkStyle = {
+  color: 'black',
+  padding: '0px 0px'
 };
 
 class SwahiliInKigali extends Component {
@@ -88,8 +93,8 @@ class SwahiliInKigali extends Component {
             </Media>
             <Col>
               <Media body>
-                <Media heading onClick={this.toggle1}>Migration</Media>
-                Many people speak Swahili because they learned it in the Swahili speaking-surrounding countries of Tanzania, DRC, Burundi, Kenya and Uganda. While reasons behind moving are diverse, migration was often precipitated by the search for better economic opportunity or the political unrest in the region.
+                <Button color='link' style={linkStyle} onClick={this.toggle1}><b><h4>Migration</h4></b></Button>
+                <p>Many people speak Swahili because they learned it in the Swahili speaking-surrounding countries of Tanzania, DRC, Burundi, Kenya and Uganda. While reasons behind moving are diverse, migration was often precipitated by the search for better economic opportunity or the political unrest in the region.</p>
               </Media>
               <Modal  isOpen={this.state.showModal1} toggle={this.toggle1} modalTransition={{ timeout: 700 }} backdropTransition={{ timeout: 1300 }}>
                 <ModalHeader close={closeBtn1}>Luc and Kubwayo</ModalHeader>
@@ -121,9 +126,6 @@ class SwahiliInKigali extends Component {
                     </Col>
                   </Row>
                 </ModalBody>
-                  <ModalFooter>
-                    <Button bsStyle="primary" onClick={onClickNext}>Next</Button>
-                  </ModalFooter>
               </Modal>
             </Col>
           </Row>
@@ -135,8 +137,8 @@ class SwahiliInKigali extends Component {
             </Media>
             <Col>
               <Media body>
-                <Media heading onClick={this.toggle2}>Business</Media>
-                Swahili has been called the lingua franca of trade in Rwanda. Oftentimes business people learn Swahili in order to better conduct business with Swahili speakers in other countries. This means that a lot of shop owners speak Swahili well.
+                <Button color='link' style={linkStyle} onClick={this.toggle2}><h4><b>Business</b></h4></Button>
+                <p>Swahili has been called the lingua franca of trade in Rwanda. Oftentimes business people learn Swahili in order to better conduct business with Swahili speakers in other countries. This means that a lot of shop owners speak Swahili well.</p>
               </Media>
               <Modal isOpen={this.state.showModal2} toggle={this.toggle2} modalTransition={{ timeout: 700 }} backdropTransition={{ timeout: 1300 }}>
                 <ModalHeader close={closeBtn2}>Kayipabo</ModalHeader>
@@ -166,8 +168,8 @@ class SwahiliInKigali extends Component {
             </Media>
             <Col>
               <Media body>
-                <Media heading onClick={this.toggle3}>Community</Media>
-                Many people learn Swahili simply from talking to their Swahili-speaking neighbors. However, these people are not usually fluent in the language. Additionally, children oftentimes learn from their parents who were born or spent time in Tanzania, Kenya and the DRC.
+                <Button color='link' style={linkStyle} onClick={this.toggle3}><h4><b>Community</b></h4></Button>
+                <p>Many people learn Swahili simply from talking to their Swahili-speaking neighbors. However, these people are not usually fluent in the language. Additionally, children oftentimes learn from their parents who were born or spent time in Tanzania, Kenya and the DRC.</p>
               </Media>
               <Modal isOpen={this.state.showModal3} toggle={this.toggle3} modalTransition={{ timeout: 700 }} backdropTransition={{ timeout: 1300 }}>
                 <ModalHeader close={closeBtn3}>Mbonyitegeko and Community Elders</ModalHeader>
@@ -177,12 +179,15 @@ class SwahiliInKigali extends Component {
                         <img src={Mbonyitegeko} style={imgInterviewStyle} alt="mbonyitegeko_img"></img>
                       </Col>
                       <Col>
-                        <p>Mbonyitegeko is from the west of Rwanda from a town called Kamembe. He said that he did not learn Swahili in school but from his family and friends. Even to this day he does not know where his family learned Swahili from but it can be assumed they learned from interactions or migration across the Congolese border (or before the border was put in place) (this needs editing obviously)</p>
+                        <p><b>Mbonyitegeko</b> is from the west of Rwanda from a town called Kamembe. He said that he did not learn Swahili in school but from his family and friends. Even to this day he does not know where his family learned Swahili from but it can be assumed they learned from interactions or migration across the DRC border.</p>
                       </Col>
                     </Row>
                     <Row>
                       <Col>
                         <img src={Elders} style={imgInterviewStyle} alt="elders_img"></img>
+                      </Col>
+                      <Col>
+                        <p>These five community elders were all born and raised in Nyamirambo. They say that they all learned Swahili not from their families but simply from talking to their friends and neighbors.</p>
                       </Col>
                     </Row>
                   </ModalBody>
@@ -197,26 +202,36 @@ class SwahiliInKigali extends Component {
             </Media>
             <Col>
               <Media body>
-                <Media heading onClick={this.toggle4}>Islam</Media>
-                Many Muslims (although not all) speak Swahili because it is the language used in mosques and religious schools. Moreover, many Muslims originate from the East African coast, where Swahili is frequently spoken.
+                <Button color='link' style={linkStyle} onClick={this.toggle4}><h4><b>Islam</b></h4></Button>
+                <p>Many Muslims (although not all) speak Swahili because it is the language used in mosques and religious schools. Moreover, many Muslims originate from the East African coast, where Swahili is frequently spoken.</p>
             </Media>
             <Modal isOpen={this.state.showModal4} toggle={this.toggle4} modalTransition={{ timeout: 700 }} backdropTransition={{ timeout: 1300 }}>
-              <ModalHeader close={closeBtn4}>Isa and Yousif Interviews</ModalHeader>
+              <ModalHeader close={closeBtn4}>Isa and Yousif</ModalHeader>
                 <ModalBody>
                   <Row>
                     <Col>
                       <img src={Isa} style={imgInterviewStyle} alt="isa_img"></img>
                     </Col>
                     <Col>
-                      <p>Isa is a Muslim fruit seller who sells bananas, tree tomatoes and pineapples deep within the labyrinth of the Kimirongo Market. He says that he learned Swahili from interacting with the many Ugandans, Kenyans, and Tanzanians who also worship at his mosque. Although Swahili is commonly spoken in and around the mosque, he says that the Friday sermons are in Arabic so that the Rwandan muslims who do not understand Swahili can participate.</p>
+                      <p><b>Isa</b> is a Muslim fruit seller who sells bananas, tree tomatoes and pineapples deep within the labyrinth of the Kimirongo Market. He says that he learned Swahili from interacting with the many Ugandans, Kenyans, and Tanzanians who also worship at his mosque. Although</p>
                     </Col>
                   </Row>
                   <Row>
                     <Col>
-                      <img src={Elders} style={imgInterviewStyle} alt="yousif_img"></img>
+                      <p>Swahili is commonly spoken in and around the mosque, he says that the Friday sermons are in Arabic so that the Rwandan muslims who do not understand Swahili can participate.</p>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <p><b>Yousif</b> works as a leader in his local Mosque in Kimirongo. He said that he learned Swahili from attending religious school, called a madrasa, growing up in the muslim heavy district of Nyamirambo.</p>
                     </Col>
                     <Col>
-                      <p>Yousif works as a leader in his local Mosque in Kimirongo. He said that he learned Swahili from attending religious school, called a madrasa, growing up in the muslim heavy district of Nyamirambo. He believes that many Rwandan muslims speak Swahili but not all Rwandans who speak Swahili are muslims.</p>
+                      <img src={Yousif} style={imgInterviewStyle} alt="yousif_img"></img>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <p>He believes that many Rwandan muslims speak Swahili but not all Rwandans who speak Swahili are muslims.</p>
                     </Col>
                   </Row>
                 </ModalBody>
