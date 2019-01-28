@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import MiddBanner from './image_files/midd_banner.png';
 import ALUBanner from './image_files/alu_banner.png';
-import GroupImg from './image_files/group_photo.JPG';
+
 
 var bannerStyle = {
   maxHeight: '128px',
@@ -37,15 +37,12 @@ class About extends Component {
             <h4>Methods</h4>
               <p>The methods used in this study focus heavily on interviews conducted in English, French, Swahili and Kinyarwanda throughout different communities in Kigali. Conducting fieldwork in small groups, students whittled down a list of 30 communities into 4 ‘hotspot’ neighborhoods where Swahili was spoken by over 50% of residents. Once identified, students discovered different bars, restaurants and activities around those areas where future language students could engage their developing Swahili language skills outside of the classroom.</p>
           </Col>
+        </Row>
+        <Row>
           <Col>
             <h4>Participants</h4>
               <p>Under Professor Nadia Horning's supervision, the following students participated in this study:</p>
               <p>Heather Cox, Veronica Estudillo, Joshua Joseph, Lenga Kutwa, Pamella Kyomugisha, Violet Low-Beinart, Alice Magaka, Allan Muhizi, Joshua Niyobuhungiro, Zorica Radanovic, Julia S de Athayde Silva, Mariejoe Uwimana, and Martin Wairimu.</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <img src={GroupImg} alt="" style={imgStyle}/>
           </Col>
         </Row>
         <br />
@@ -68,7 +65,7 @@ class About extends Component {
         <br />
         <Row>
           <Col align="center">
-            <h4>Middlebury Language School's Mission Statement:</h4>
+            <h4>Middlebury Language Schools' Mission Statement:</h4>
               <p>“The Middlebury Language Schools welcome students from all walks of life and all parts of the global community. We provide expert education in languages and cultures through innovative, immersive instruction and the demonstrated effectiveness of the Language Pledge to enhance linguistic excellence and intercultural understanding.”</p>
           </Col>
         </Row>

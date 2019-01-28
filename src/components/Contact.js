@@ -16,9 +16,8 @@ class Contact extends Component {
               <b><a href="http://www.middlebury.edu/ls" style={linkStyle}>Middlebury College Language School</a></b><br />
               Sunderland Language Center<br />
               14 Old Chapel Rd.<br />
-              Middlebury, VT 05753<br />
-              USA<br />
-              <a href="mailto:languages@middlebury.eduu">languages@middlebury.edu</a>
+              Middlebury, VT 05753, USA<br />
+              <a href="mailto:languagesmiddlebury.eduu">languages@middlebury.edu</a>
               <br />
             </address>
           </Col>

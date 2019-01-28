@@ -9,6 +9,16 @@ import {
 
 const items = [
   {
+    src: require('./image_files/group_photo.JPG'),
+    altText: '',
+    caption: ''  
+  },
+  {
+    src: require('./image_files/slider1.jpg'),
+    altText: 'View of Kigali',
+    caption: 'Jan 23 2019'
+  },
+  {
     src: require('./image_files/slider2.JPG'),
     altText: 'Nyamirambo Afternoon',
     caption: 'Jan 23 2019'
@@ -20,7 +30,7 @@ const items = [
   },
   {
     src: require('./image_files/slider4.JPG'),
-    altText: 'Design Sessin 2',
+    altText: 'Design Session 2',
     caption: 'Slide 3'
   }
 ];
