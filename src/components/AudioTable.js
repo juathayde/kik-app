@@ -19,7 +19,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
   <Table hover>
     <thead align='left'>
       <tr>
-        <th>#</th>
+        <th></th>
         <th>English</th>
         <th>Kigali</th>
         <th>Tanzania</th>
