@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import AudioTable from './AudioTable.js';
 import WhySwahili from './WhySwahili.js';
 import Home from './Home.js';
@@ -10,22 +10,19 @@ import About from './About.js';
 import Contact from './Contact.js';
 import KiKLogo from './image_files/kik-logo.png';
 
-// var icon = (
-//   <span class="logo">
-//     <img src={KiKLogo} height="33" width="120" alt="logo_img" />
-//   </span>
-// );
+var imgStyle = {
+  maxHeight: '30px',
+  maxWidth: '100px',
+};
 
 export default class NavBar extends Component {
     constructor(props) {
       super(props);
 
       this.state = {
-        isOpen: false,
         viewmode: 'Home'
       };
 
-      this.toggle = this.toggle.bind(this);
       this.handleAbout = this.handleAbout.bind(this);
       this.handleWhySwahili = this.handleWhySwahili.bind(this);
       this.handleWhyKigali = this.handleWhyKigali.bind(this);
@@ -40,12 +37,6 @@ export default class NavBar extends Component {
         viewmode: 'Home'
       });
     }
-
-    toggle() {
-      this.setState({
-        isOpen: !this.state.isOpen
-      });
-    };
 
     handleAbout() {
       this.setState({
@@ -93,9 +84,10 @@ export default class NavBar extends Component {
     const navigationBar = (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/" brand={KiKLogo}> <b>KiK</b></NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
+          <NavbarBrand href="#">
+            <img src={KiKLogo} style={imgStyle} alt="" />{' '}
+            <b>KiK</b>
+          </NavbarBrand>
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink onClick={this.handleHome}>Home</NavLink>
@@ -119,7 +111,6 @@ export default class NavBar extends Component {
                 <NavLink onClick={this.handleContact}>Contact Us</NavLink>
               </NavItem>
             </Nav>
-          </Collapse>
         </Navbar>
       </div>
     )
