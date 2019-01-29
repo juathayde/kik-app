@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Button, Col, Container, Jumbotron, Row } from 'reactstrap';
+import KiKLogo from './image_files/kik-logo.png';
 
+const imgStyle = {
+  maxHeight: '200px'
+}
 
 class About extends Component {
   render() {
@@ -20,16 +24,21 @@ class About extends Component {
               <p>The KiK team included the following students:</p>
               <p>Heather Cox, Veronica Estudillo, Joshua Joseph, Lenga Kutwa, Pamella Kyomugisha, Violet Low-Beinart, Alice Magaka, Allan Muhizi, Joshua Niyobuhungiro, Zorica Radanovic, Julia S de Athayde Silva, Mariejoe Uwimana, and Martin Wairimu.</p>
           </Col>
+          <Col align='center'>
+            <img src={KiKLogo} style={imgStyle} alt="" />
+          </Col>
         </Row>
-        <Jumbotron>
+        <br />
+        <Jumbotron align='center'>
           <h1 className="display-3">Map of Kiswahili in Kigali</h1>
           <p className="lead">This is a joint project between Middlebury College and ALU Rwanda's students.</p>
+          <iframe width='75%' height='400px' src='http://middlebury.maps.arcgis.com/apps/View/index.html?appid=edf83cac73f646438fa30de2d0a300a1&extent=29.6210,-2.1940,30.6097,-1.7061' frameborder='0' scrolling='no'></iframe>
           <hr className="my-2" />
-          <p>Special thanks to Middlebury College's Associate Professor of Political Science Nadia Horning, ALU Rwanda, etc.</p>
-          <p className="lead">
-            <Button color="primary">About KiK</Button>
-          </p>
+          <p>Additional Info About Map</p>
         </Jumbotron>
+      </Container>
+      <Container>
+
       </Container>
       </div>
     );
