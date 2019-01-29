@@ -52,7 +52,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         <td>
           <div align='center' className="radio">
             <label>
-              <span style={{textDecoration: "underline", color:"black"}} href="#" id="kigali1">
+              <span href="#" id="kigali1">
                 <input type="radio" value="k1"
                             checked={selectedAudio === 'k1'}
                             onChange={() => chooseSound("k1")} /></span>
@@ -62,7 +62,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         <td>
           <div align='center' className="radio">
             <label>
-              <span style={{textDecoration: "underline", color:"black"}} href="#" id="tanzania1">
+              <span href="#" id="tanzania1">
                 <input type="radio" value="t1"
                               checked={selectedAudio === 't1'}
                               onChange={() => chooseSound("t1")} /></span>
@@ -72,7 +72,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         <td>
           <div align='center' className="radio">
             <label>
-              <span style={{textDecoration: "underline", color:"black"}} href="#" id="burundi1">
+              <span href="#" id="burundi1">
                 <input type="radio" value="b1"
                               checked={selectedAudio === 'b1'}
                               onChange={() => chooseSound("b1")} /></span>
@@ -82,7 +82,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         <td>
           <div align='center' className="radio">
             <label>
-              <span style={{textDecoration: "underline", color:"black"}} href="#" id="drc1">
+              <span href="#" id="drc1">
                 <input type="radio" value="d1"
                               checked={selectedAudio === 'd1'}
                               onChange={() => chooseSound("d1")} /></span>
@@ -92,7 +92,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         <td>
           <div align='center' className="radio">
             <label>
-              <span style={{textDecoration: "underline", color:"black"}} href="#" id="kenya1">
+              <span href="#" id="kenya1">
                 <input type="radio" value="ky1"
                               checked={selectedAudio === 'ky1'}
                               onChange={() => chooseSound("ky1")} /></span>
@@ -114,7 +114,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         <td>
           <div align='center' className="radio">
             <label>
-              <span style={{textDecoration: "underline", color:"black"}} href="#" id="kigali2">
+              <span href="#" id="kigali2">
                 <input type="radio" value="k2"
                               checked={selectedAudio === 'k2'}
                               onChange={() => chooseSound("k2")} /></span>
@@ -124,7 +124,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         <td>
           <div align='center' className="radio">
             <label>
-              <span style={{textDecoration: "underline", color:"black"}} href="#" id="tanzania2">
+              <span href="#" id="tanzania2">
                 <input type="radio" value="t2"
                               checked={selectedAudio === 't2'}
                               onChange={() => chooseSound("t2")} /></span>
@@ -134,7 +134,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         <td>
           <div align='center' className="radio">
             <label>
-              <span style={{textDecoration: "underline", color:"black"}} href="#" id="burundi2">
+              <span href="#" id="burundi2">
                 <input type="radio" value="b2"
                               checked={selectedAudio === 'b2'}
                               onChange={() => chooseSound("b2")} /></span>
@@ -144,7 +144,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         <td>
           <div align='center' className="radio">
             <label>
-              <span style={{textDecoration: "underline", color:"black"}} href="#" id="drc2">
+              <span href="#" id="drc2">
                 <input type="radio" value="d2"
                               checked={selectedAudio === 'd2'}
                               onChange={() => chooseSound("d2")} /></span>
@@ -154,7 +154,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         <td>
           <div align='center' className="radio">
             <label>
-              <span style={{textDecoration: "underline", color:"black"}} href="#" id="kenya2">
+              <span href="#" id="kenya2">
                 <input type="radio" value="ky2"
                               checked={selectedAudio === 'ky2'}
                               onChange={() => chooseSound("ky2")} /></span>
@@ -176,7 +176,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         <td>
           <div align='center' className="radio">
             <label>
-              <span style={{textDecoration: "underline", color:"black"}} href="#" id="kigali3">
+              <span href="#" id="kigali3">
                 <input type="radio" value="k3"
                               checked={selectedAudio === 'k3'}
                               onChange={() => chooseSound("k3")} /></span>
@@ -186,7 +186,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         <td>
           <div align='center' className="radio">
             <label>
-              <span style={{textDecoration: "underline", color:"black"}} href="#" id="tanzania3">
+              <span href="#" id="tanzania3">
                 <input type="radio" value="t3"
                               checked={selectedAudio === 't3'}
                               onChange={() => chooseSound("t3")} /></span>
@@ -196,7 +196,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         <td>
           <div align='center' className="radio">
             <label>
-              <span style={{textDecoration: "underline", color:"black"}} href="#" id="burundi3">
+              <span  href="#" id="burundi3">
                 <input type="radio" value="b3"
                               checked={selectedAudio === 'b3'}
                               onChange={() => chooseSound("b3")} /></span>
@@ -206,7 +206,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         <td>
           <div align='center' className="radio">
             <label>
-              <span style={{textDecoration: "underline", color:"black"}} href="#" id="drc3">
+              <span href="#" id="drc3">
                 <input type="radio" value="d3"
                               checked={selectedAudio === 'd3'}
                               onChange={() => chooseSound("d3")} /></span>
@@ -216,7 +216,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
         <td>
           <div align='center' className="radio">
             <label>
-              <span style={{textDecoration: "underline", color:"black"}} href="#" id="kenya3">
+              <span href="#" id="kenya3">
                 <input type="radio" value="ky3"
                               checked={selectedAudio === 'ky3'}
                               onChange={() => chooseSound("ky3")} /></span>
@@ -347,7 +347,7 @@ export default class AudioTable extends Component {
       <Container align='left'>
         <Row>
           <Col>
-          <h3><span style={{textDecoration: "underline", color:"black"}} href="#" id="phrasebook">Phrase Book</span></h3>
+          <h3><span style={{textDecoration: "underline", color:"black"}}  href="#" id="phrasebook">Phrase Book</span></h3>
           <UncontrolledTooltip placement="right" target="phrasebook">
             Listen to Different Dialects of Swahili below!
           </UncontrolledTooltip>

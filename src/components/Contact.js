@@ -8,9 +8,10 @@ const linkStyle = {
 };
 
 var bannerStyle = {
-  maxHeight: '128px',
-  maxWidth: '490px',
+  maxHeight: '85px',
+  maxWidth: '300px',
   align: 'middle',
+  margin: '15px'
 };
 
 class Contact extends Component {
@@ -42,6 +43,7 @@ class Contact extends Component {
           </Col>
         </Row>
       </Container>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </div>
     );
   }

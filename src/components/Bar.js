@@ -11,7 +11,7 @@ import Contact from './Contact.js';
 import KiKLogo from './image_files/kik-logo.png';
 
 var imgStyle = {
-  maxHeight: '30px',
+  maxHeight: '35px',
   maxWidth: '100px',
 };
 
@@ -83,10 +83,9 @@ export default class NavBar extends Component {
   render() {
     const navigationBar = (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar color="dark" dark expand="md">
           <NavbarBrand href="#">
-            <img src={KiKLogo} style={imgStyle} alt="" />{' '}
-            <b>KiK</b>
+            <img src={KiKLogo} style={imgStyle} alt="" />
           </NavbarBrand>
             <Nav className="ml-auto" navbar>
               <NavItem>

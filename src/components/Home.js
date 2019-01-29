@@ -5,9 +5,9 @@ import MiddBanner from './image_files/midd_banner.png';
 import ALUBanner from './image_files/alu_banner.png';
 
 var bannerStyle = {
-  maxHeight: '128px',
-  maxWidth: '490px',
+  maxHeight: '85px',
   align: 'middle',
+  margin: '15px'
 };
 
 const HomeContent = (props) => {
@@ -30,13 +30,13 @@ const HomeContent = (props) => {
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col align="center">
               <img src={MiddBanner} alt="midd_image" style={bannerStyle} />
-              <p><b>Middlebury College</b> is a liberal arts college located in Middlebury, Vermont in the United States. Since its founding in 1800, Middlebury College has focused on its educational mission to prepare students to face the world’s most challenging problems. In addition to being a prominent liberal arts college, Middlebury College is also home to the internationally recognized <a href="http://www.middlebury.edu/ls">summer language schools</a> with 38 sites in various regions around the world.</p>
+              <p align="left"><b>Middlebury College</b> is a liberal arts college located in Middlebury, Vermont in the United States. Since its founding in 1800, Middlebury College has focused on its educational mission to prepare students to face the world’s most challenging problems. In addition to being a prominent liberal arts college, Middlebury College is also home to the internationally recognized <a href="http://www.middlebury.edu/ls">summer language schools</a> with 38 sites in various regions around the world.</p>
           </Col>
-          <Col>
+          <Col align="center">
             <img src={ALUBanner} alt="alu_image" style={bannerStyle} />
-             <p><b>The African Leadership University (ALU)</b> is a network of prominent educational institutions whose mission is to produce three million African leaders over the next 50 years. ALU provides an innovative educational approach in addressing Africa’s greatest challenges by empowering students to take ownership of their own learning. In September 2017, ALU opened its second campus in Kigali, Africa’s safest and most innovative East African city.</p>
+            <p align="left"><b>The African Leadership University (ALU)</b> is a network of prominent educational institutions whose mission is to produce three million African leaders over the next 50 years. ALU provides an innovative educational approach in addressing Africa’s greatest challenges by empowering students to take ownership of their own learning. In September 2017, ALU opened its second campus in Kigali, Africa’s safest and most innovative East African city.</p>
           </Col>
         </Row>
         <br />
