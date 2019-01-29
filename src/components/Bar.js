@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Collapse, Container, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import AudioTable from './AudioTable.js';
 import WhySwahili from './WhySwahili.js';
-import PhraseTable from './PhraseTable.js';
 import Home from './Home.js';
 import SwahiliInKigali from './SwahiliInKigali.js';
 import WhyKigali from './WhyKigali.js';
@@ -152,17 +151,6 @@ export default class NavBar extends Component {
           <WhySwahili />
           <br />
           <AudioTable />
-          <br />
-          //PhraseTable
-          <br />
-          <Container align="left">
-          <h4>References:</h4>
-          <li><a href="https://www.omniglot.com/writing/swahili.htm">https://www.omniglot.com/writing/swahili.htm</a></li>
-          <li><a href="https://clp.arizona.edu/swahili">https://clp.arizona.edu/swahili</a></li>
-          <li><a href="https://www.newtimes.co.rw/section/read/207927">https://www.newtimes.co.rw/section/read/207927</a></li>
-          <li><a href="https://www.britannica.com/topic/Swahili-language">https://www.britannica.com/topic/Swahili-language</a></li>
-          <li>COLEMAN, BEVERLY E. “A HISTORY OF SWAHILI.” The Black Scholar, vol. 2, no. 6, 1971, pp. 13–25. JSTOR, <a href="www.jstor.org/stable/41163481.">www.jstor.org/stable/41163481.</a></li>
-          </Container>
         </div>
       );
     }
@@ -207,3 +195,13 @@ export default class NavBar extends Component {
     }
   }
 }
+
+// <br />
+// <Container align="left">
+// <h4>References:</h4>
+// <li><a href="https://www.omniglot.com/writing/swahili.htm">https://www.omniglot.com/writing/swahili.htm</a></li>
+// <li><a href="https://clp.arizona.edu/swahili">https://clp.arizona.edu/swahili</a></li>
+// <li><a href="https://www.newtimes.co.rw/section/read/207927">https://www.newtimes.co.rw/section/read/207927</a></li>
+// <li><a href="https://www.britannica.com/topic/Swahili-language">https://www.britannica.com/topic/Swahili-language</a></li>
+// <li>COLEMAN, BEVERLY E. “A HISTORY OF SWAHILI.” The Black Scholar, vol. 2, no. 6, 1971, pp. 13–25. JSTOR, <a href="www.jstor.org/stable/41163481.">www.jstor.org/stable/41163481.</a></li>
+// </Container>

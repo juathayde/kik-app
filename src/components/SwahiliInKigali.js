@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Container, Row, Col, Media, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Button, Container, Row, Col, Media, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import MigrationImg from './image_files/migration.png';
 import BusinessImg from './image_files/business.png';
 import CommunityImg from './image_files/community.png';

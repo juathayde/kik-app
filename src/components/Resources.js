@@ -58,7 +58,7 @@ class Resources extends Component {
           </Row>
           <Row>
             <Col>
-              <img src={ALUBanner} style={imgStyle} />
+              <img src={ALUBanner} style={imgStyle} alt=""/>
             </Col>
             <Col>
               <p>As the host institution, <b>ALU Rwanda</b> offers internship opportunities for students, including Swahili speakers, in various fields and locations. Internships range from medical care, to law and human rights, to social entrepreneurship and much more.</p>

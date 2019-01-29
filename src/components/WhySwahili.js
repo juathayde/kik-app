@@ -39,12 +39,6 @@ class WhySwahili extends Component {
             <img src={SwahiliTimeline} style={SwahiliTimeLineStyle} alt="SwahiliTimeline_img" />
           </Col>
         </Row>
-        <Row>
-          <Col>
-          <h4>Phrase Book</h4>
-            <p>People say Swahili was born in Zanzibar, grew up in Tanzania, fell sick in Kenya, died in Uganda and was buried in Congo. The reality is that there is no single version of Swahili that is superior to another. Just like with variations of English, Swahili-speakers across different countries will be able to easily communicate, with each country having their own slight variations of Swahili.</p>
-          </Col>
-        </Row>
       </Container>
       </div>
     );

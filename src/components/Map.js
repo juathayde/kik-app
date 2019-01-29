@@ -36,11 +36,11 @@ export class MapContainer extends Component {
        <Map
          id="map"
          google={this.props.google}
-         zoom={12}
+         zoom={13}
          style={mapStyles}
          initialCenter={{
-          lat: -1.9706,
-          lng: 30.1044
+          lat: -1.9596,
+          lng: 30.0970
          }}
        >
        <Marker
@@ -66,7 +66,7 @@ export class MapContainer extends Component {
         />
         <Marker
          onClick={this.onMarkerClick}
-         name={'Gikondo New H-zone Bar'}
+         name={'Gikondo New H-Zone Bar'}
          description={'A lively bar in Gikondo that hosts many concerts with Congolese and Ugandan artists.'}
          position={{
            lat:-1.9679805, lng: 30.0816876}}
@@ -130,7 +130,7 @@ export class MapContainer extends Component {
                <Marker
                 onClick={this.onMarkerClick}
                 name={'Green Market in Gikondo'}
-                description={'A green market that sells local food and fashion products. Check their <a href=\"https://www.facebook.com/GreenAfrican/\">Facebook page</a> or business hours as they regularly change.'}
+                description={'A green market that sells local food and fashion products. Check their' + '<a href="https://www.facebook.com/GreenAfrican/">Facebook page</a>' + 'or business hours as they regularly change.'}
                 position={{
                   lat:-1.966476, lng: 30.080412}}
                 />
@@ -143,7 +143,7 @@ export class MapContainer extends Component {
                  />
                  <Marker
                   onClick={this.onMarkerClick}
-                  name={'Caplaki Craft Village ( Kiyovu)'}
+                  name={'Caplaki Craft Village (Kiyovu)'}
                   description={'Over 40 individual stalls of hand-made and local crafts fill Caplaki Craft Village. Come to Caplaki to practice your bargaining skills and leave with a few souvenirs!'}
                   position={{
                   lat:-1.9578973, lng: 30.0715381}}
@@ -161,13 +161,6 @@ export class MapContainer extends Component {
                   description={'Practise your Kiswahili while shopping for fresh local produce. You can find everything from cassava to tree tomatoes and fresh mangoes!'}
                   position={{
                   lat:-1.969780, lng: 30.075147}}
-                 />
-                 <Marker
-                  onClick={this.onMarkerClick}
-                  name={''}
-                  description={'Over 40 individual stalls of hand-made and local crafts fill Caplaki Craft Village. Come to Caplaki to practice your bargaining skills and leave with a few souvenirs!'}
-                  position={{
-                  lat:-1.9578973, lng: 30.0715381}}
                  />
                  <Marker
                   onClick={this.onMarkerClick}
