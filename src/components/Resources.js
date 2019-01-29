@@ -86,15 +86,17 @@ class Resources extends Component {
             <p><b>Nyamirambo Women’s Center</b> is a local organization that offers free vocational training for disadvantaged women in the community.</p>
             </Col>
           </Row>
+          <br />
           <Row>
             <Col>
             <p><b>Centre Marembo</b> is a local organization that aims to improve the lives of disadvantaged youth in Kigali through training and educational support. Additionally, some local primary and secondary schools welcome partnerships with ALU students to promote knowledge creation and sharing in the classrooms.</p>
             </Col>
-            <Col>
+            <Col xs="auto">
               <img src={Marembo} style={imgStyle} alt="" />
             </Col>
           </Row>
         </Container>
+        <br />
       </Container>
     );
   }
