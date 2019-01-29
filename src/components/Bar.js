@@ -1,30 +1,22 @@
 import React, { Component } from 'react';
-import {
-  Button,
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import AudioTable from './AudioTable.js';
+import WhySwahili from './WhySwahili.js';
+import Home from './Home.js';
+import SwahiliInKigali from './SwahiliInKigali.js';
+import WhyKigali from './WhyKigali.js';
+import Resources from './Resources.js';
+import About from './About.js';
+import Contact from './Contact.js';
+import KiKLogo from './image_files/kik-logo.png';
 
-  import Slider from './Slider.js';
-  import MapContainer from './Map.js';
-  import PhraseBook from './PhraseBook.js';
+// var icon = (
+//   <span class="logo">
+//     <img src={KiKLogo} height="33" width="120" alt="logo_img" />
+//   </span>
+// );
 
-  var icon = (
-    <span class="logo">
-      <a href="/">
-        <img src="/kik-logo.png" height="33" width="120" alt="text here" /></a>
-    </span>
-  );
-
-  export default class NavBar extends Component {
+export default class NavBar extends Component {
     constructor(props) {
       super(props);
 
@@ -34,7 +26,7 @@ import {
       };
 
       this.toggle = this.toggle.bind(this);
-      this.handleIntro = this.handleIntro.bind(this);
+      this.handleAbout = this.handleAbout.bind(this);
       this.handleWhySwahili = this.handleWhySwahili.bind(this);
       this.handleWhyKigali = this.handleWhyKigali.bind(this);
       this.handleKiK = this.handleKiK.bind(this);
@@ -55,9 +47,9 @@ import {
       });
     };
 
-    handleIntro() {
+    handleAbout() {
       this.setState({
-        viewmode: 'Intro'
+        viewmode: 'About'
       });
     }
 
@@ -101,35 +93,27 @@ import {
     const navigationBar = (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/" brand={icon}> <b>KiK: Kiswahili in Kigali</b></NavbarBrand>
+          <NavbarBrand href="/" brand={KiKLogo}> <b>KiK</b></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Menu
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  <div onClick={this.handleIntro}>Intro & Participants</div>
-                </DropdownItem>
-                <DropdownItem>
-                  <div onClick={this.handleWhySwahili}>Why Swahili?</div>
-                </DropdownItem>
-                <DropdownItem>
-                  <div onClick={this.handleWhyKigali}>Why Kigali?</div>
-                </DropdownItem>
-                <DropdownItem>
-                  <div onClick={this.handleKiK}>Swahili in Kigali</div>
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  <div onClick={this.handleHome}>Home</div>
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
               <NavItem>
-                <NavLink onClick={this.handleResources}>Swahili Resources</NavLink>
+                <NavLink onClick={this.handleHome}>Home</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={this.handleAbout}>About KiK</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={this.handleWhySwahili}>Why Kiswahili?</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={this.handleWhyKigali}>Why Kigali?</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={this.handleKiK}>Kiswahili in Kigali</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={this.handleResources}>Resources</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink onClick={this.handleContact}>Contact Us</NavLink>
@@ -145,17 +129,17 @@ import {
         <div>
           {navigationBar}
           <br />
-          <Slider />
+          <Home />
         </div>
       );
     }
-    //Introduction & participants
-    else if (this.state.viewmode === 'Intro') {
+    //About project
+    else if (this.state.viewmode === 'About') {
       return (
         <div>
           {navigationBar}
           <br />
-          <h1> This is the intro page </h1>
+          <About />
         </div>
       );
     }
@@ -164,7 +148,9 @@ import {
         <div>
           {navigationBar}
           <br />
-          <PhraseBook />
+          <WhySwahili />
+          <br />
+          <AudioTable />
         </div>
       );
     }
@@ -173,7 +159,7 @@ import {
         <div>
           {navigationBar}
           <br />
-          <h1> This is the the why kigali page </h1>
+          <WhyKigali />
         </div>
       );
     }
@@ -182,7 +168,7 @@ import {
         <div>
           {navigationBar}
           <br />
-          <h1> This is the the Swahili in Kigali page </h1>
+          <SwahiliInKigali />
         </div>
       );
     }
@@ -191,7 +177,7 @@ import {
         <div>
           {navigationBar}
           <br />
-          <MapContainer />
+          <Resources />
         </div>
       );
     }
@@ -200,21 +186,7 @@ import {
         <div>
           {navigationBar}
           <br />
-          <address align='left'>
-            <b>Middlebury Center for Social Entrepreneurship</b><br />
-            118 South Main St.<br />
-            Middlebury, VT 05753<br />
-            USA<br />
-            <a href="mailto:innovationhub@middlebury.edu">innovationhub@middlebury.edu</a>
-          </address>
-          <br />
-          <address align='left'>
-            <b> African Leadership Academy Rwanda</b><br />
-            Kigali Heights<br />
-            2nd Floor, KG 7 Ave<br />
-            Kigali, Rwanda<br />
-            <a href="mailto:info@alueducation.com">info@alueducation.com</a>
-          </address>
+          <Contact />
         </div>
       );
     }
@@ -223,3 +195,13 @@ import {
     }
   }
 }
+
+// <br />
+// <Container align="left">
+// <h4>References:</h4>
+// <li><a href="https://www.omniglot.com/writing/swahili.htm">https://www.omniglot.com/writing/swahili.htm</a></li>
+// <li><a href="https://clp.arizona.edu/swahili">https://clp.arizona.edu/swahili</a></li>
+// <li><a href="https://www.newtimes.co.rw/section/read/207927">https://www.newtimes.co.rw/section/read/207927</a></li>
+// <li><a href="https://www.britannica.com/topic/Swahili-language">https://www.britannica.com/topic/Swahili-language</a></li>
+// <li>COLEMAN, BEVERLY E. “A HISTORY OF SWAHILI.” The Black Scholar, vol. 2, no. 6, 1971, pp. 13–25. JSTOR, <a href="www.jstor.org/stable/41163481.">www.jstor.org/stable/41163481.</a></li>
+// </Container>
