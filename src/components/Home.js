@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'reactstrap';
 import Slider from './Slider.js';
-import MiddBanner from './image_files/midd_banner.png';
+import MiddLogo from './image_files/midd_logo.png';
 import ALUBanner from './image_files/alu_banner.png';
 
 var bannerStyle = {
@@ -17,7 +17,7 @@ const HomeContent = (props) => {
       <br />
       <Container align="left">
         <Row>
-          <Col>
+          <Col align='center'>
             <h3>Introduction</h3>
               <p>Despite being internationally renowned for its rigorous and diverse foreign language instruction programs, Middlebury College has never before offered an immersive course in a native African language. In an effort to address this conspicuous lacuna, the college plans to open a Middlebury School of Kiswahili in summer 2020 at the African Leadership University in Kigali, Rwanda.
               In preparation for  this new language program, a team of 5 Middlebury students and 8 ALU students collaborated to investigate where, how, and why Kiswahili is spoken in various places and to various degrees in Kigali.</p>
@@ -31,7 +31,7 @@ const HomeContent = (props) => {
         </Row>
         <Row>
           <Col align="center">
-              <img src={MiddBanner} alt="midd_image" style={bannerStyle} />
+              <img src={MiddLogo} alt="midd_image" style={bannerStyle} />
               <p align="left"><b>Middlebury College</b> is a liberal arts college located in Middlebury, Vermont in the United States. Since its founding in 1800, Middlebury College has focused on its educational mission to prepare students to face the world’s most challenging problems. In addition to being a prominent liberal arts college, Middlebury College is also home to the internationally recognized <a href="http://www.middlebury.edu/ls">summer language schools</a> with 38 sites in various regions around the world.</p>
           </Col>
           <Col align="center">
@@ -42,11 +42,12 @@ const HomeContent = (props) => {
         <br />
         <Row>
           <Col align="center">
-            <h3>Middlebury Language Schools' Mission Statement:</h3>
+            <h3>Middlebury Language Schools' Mission Statement</h3>
               <p>“The Middlebury Language Schools welcome students from all walks of life and all parts of the global community. We provide expert education in languages and cultures through innovative, immersive instruction and the demonstrated effectiveness of the Language Pledge to enhance linguistic excellence and intercultural understanding.”</p>
           </Col>
         </Row>
       </Container>
+      <br /><br />
     </div>
   );
 };

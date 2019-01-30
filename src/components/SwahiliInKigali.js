@@ -16,6 +16,8 @@ import Yousif from './image_files/Yousif.JPG';
 var imgStyle = {
   maxHeight: '128px',
   maxWidth: '128px',
+  paddingLeft: '20px',
+  paddingTop: '10px'
 };
 
 var imgInterviewStyle = {
@@ -25,12 +27,15 @@ var imgInterviewStyle = {
 
 const conStyle = {
   margin: '40px',
-  border: '5px solid gray'
+  border: '5px solid gray',
+  borderRadius: '25px',
+  padding: '5px',
+  backgroundColor: 'white'
 };
 
 const linkStyle = {
   color: 'black',
-  padding: '0px 0px'
+  padding: '0px'
 };
 
 class SwahiliInKigali extends Component {
@@ -239,6 +244,7 @@ class SwahiliInKigali extends Component {
           </Col>
         </Row>
       </Container>
+      <br />
       </div>
     );
   }

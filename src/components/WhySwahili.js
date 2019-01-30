@@ -3,17 +3,20 @@ import { Col, Container, Media, Row } from 'reactstrap';
 import SwahiliTimeline from './image_files/swahili_timeline.jpg';
 import SwahiliMap from './image_files/swahili_map.jpg';
 
-var SwahiliMapStyle = {
+const SwahiliMapStyle = {
   maxHeight: '400px',
   maxWidth: '400px',
   align: 'middle',
+  borderRadius: '10px'
 };
 
-var SwahiliTimeLineStyle = {
+const SwahiliTimeLineStyle = {
   maxHeight: '600px',
   maxWidth: '600px',
   align: 'middle',
+  borderRadius: '10px'
 };
+
 
 class WhySwahili extends Component {
   render() {

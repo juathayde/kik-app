@@ -2,19 +2,20 @@ import React, { Component } from 'react';
 import MapContainer from './Map.js';
 import { Container, Col, Row } from 'reactstrap';
 import ALUBanner from './image_files/alu_banner.png';
+import ALULogo from './image_files/alu_logo.png';
 import TeachRwanda from './image_files/teachr.png';
-import WomenCtr from './image_files/womensc.png';
 import Marembo from './image_files/maremboc.jpg';
 
-var imgStyle = {
+const imgStyle = {
   maxHeight: '650px',
   maxWidth: '400px',
   align: 'middle',
 }
 
-var containerStyle = {
+const containerStyle = {
   Color: 'black'
 }
+
 class Resources extends Component {
   render() {
     return (
@@ -25,11 +26,15 @@ class Resources extends Component {
         <br /><br /><br /><br /><br /><br /><br /><br /><br />
         <br /><br /><br /><br /><br /><br /><br /><br /><br />
         <Container align="left">
-        <h4>Online Resources</h4>
-        <p>To supplement the instruction of Swahili at the language school, here is a list of additional online Swahili resources:</p>
         <Row>
           <Col>
-          <h5>Dictionaries, Ebooks & more</h5>
+            <h4>Online Resources</h4>
+            <p>To supplement the instruction of Swahili at the language school, here is a list of additional online Swahili resources:</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+          <h5>Dictionaries, Ebooks & More</h5>
             <li><a href="https://en.bab.la/dictionary/english-swahili/">Ba.bla</a></li>
             <li><a href="https://www.lexilogos.com/english/swahili_dictionary.htm#">LexiLogos</a></li>
             <li><a href="https://www.livelingua.com/project/fsi/Swahili/">Live Lingua Project</a></li>
@@ -55,37 +60,29 @@ class Resources extends Component {
         </Row>
         </Container>
         <br />
-        <Container style={containerStyle} align='left'>
-        <h4>Organizations</h4>
-          <Row>
-            <Col>
-              <p>Major international and local organizations work in Kigali, dealing with various aspects such as education, women’s empowerment, health awareness and skills development. While each organization in Kigali has different goals, volunteer and internship opportunities are available for Swahili speakers in many of them.</p>
-            </Col>
-          </Row>
-          <Row>
-            <Col align='center'>
-              <img src={ALUBanner} style={imgStyle} alt=""/>
-            </Col>
-            <Col>
-              <p>As the host institution, <b>ALU Rwanda</b> offers internship opportunities for students, including Swahili speakers, in various fields and locations. Internships range from medical care, to law and human rights, to social entrepreneurship and much more.</p>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-            <p>Besides ALU, international and local organizations are always looking for talent to strengthen their team and pursue significant opportunities for growth. To name a few: <b>TEACH Rwanda</b> is an international organization working with volunteers and teachers to transform early childhood teacher education.</p>
-            </Col>
-            <Col xs="auto">
-            <img src={TeachRwanda} style={imgStyle} alt=""/>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs="auto">
-              <img src={WomenCtr} style={imgStyle} alt=""/>
-            </Col>
-            <Col>
-            <p><b>Nyamirambo Women’s Center</b> is a local organization that offers free vocational training for disadvantaged women in the community.</p>
-            </Col>
-          </Row>
+        <Container align='left'>
+        <Row>
+          <Col>
+            <h4>Organizations</h4>
+            <p>Major international and local organizations work in Kigali, dealing with various aspects such as education, women’s empowerment, health awareness and skills development. While each organization in Kigali has different goals, volunteer and internship opportunities are available for Swahili speakers in many of them.</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col align='center'>
+            <img src={ALUBanner} style={imgStyle} alt=""/>
+          </Col>
+          <Col>
+            <p>As the host institution, <b>ALU Rwanda</b> offers internship opportunities for students, including Swahili speakers, in various fields and locations. Internships range from medical care, to law and human rights, to social entrepreneurship and much more.</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+          <p>Besides ALU, international and local organizations are always looking for talent to strengthen their team and pursue significant opportunities for growth. To name a few: <b>TEACH Rwanda</b> is an international organization working with volunteers and teachers to transform early childhood teacher education.</p>
+          </Col>
+          <Col xs="auto">
+          <img src={TeachRwanda} style={imgStyle} alt=""/>
+          </Col>
+        </Row>
           <br />
           <Row>
             <Col>
@@ -93,6 +90,11 @@ class Resources extends Component {
             </Col>
             <Col xs="auto">
               <img src={Marembo} style={imgStyle} alt="" />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              Additionally, some local primary and secondary schools welcome partnerships with students to promote knowledge creation and sharing in the classrooms. <b>Groupe Scolaire Gatenga</b> in Kigali is an example of a school that welcomes partnerships with students interested in Swahili. Interested students might contact Professor Harerimana Balthazar for more information.
             </Col>
           </Row>
         </Container>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import MiddBanner from './image_files/midd_banner.png';
+import MiddLogo from './image_files/midd_logo.png';
 import ALUBanner from './image_files/alu_banner.png';
 
 const linkStyle = {
@@ -22,7 +23,7 @@ class Contact extends Component {
         <Row>
           <Col>
             <address align='center'>
-              <img src={MiddBanner} style={bannerStyle} alt=" "></img><br />
+              <img src={MiddLogo} style={bannerStyle} alt=" "></img><br />
               <b><a href="http://www.middlebury.edu/ls" style={linkStyle}>Middlebury College Language School</a></b><br />
               Sunderland Language Center<br />
               14 Old Chapel Rd.<br />
