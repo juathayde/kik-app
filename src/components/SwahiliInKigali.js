@@ -22,7 +22,7 @@ var imgStyle = {
 
 var imgInterviewStyle = {
   maxHeight: '250px',
-  maxWidth: '300px',
+  maxWidth: '250px',
 };
 
 const conStyle = {
@@ -153,7 +153,7 @@ class SwahiliInKigali extends Component {
                         <img src={Kayipabo} style={imgInterviewStyle} alt="kayipabo_img"></img>
                       </Col>
                       <Col>
-                        <p>Kayipabo is Rwandan but speaks Kiswahili as he went to high school and university in DRC. He now uses the languages extensively when he does business in surrounding countries and as a consultant for the World Bank. He explained that is absolutely necessary for</p>
+                        <p><b>Kayipabo</b> is Rwandan but speaks Kiswahili as he went to high school and university in DRC. He now uses the languages extensively when he does business in surrounding countries and as a consultant for the World Bank. He explained that is absolutely necessary for</p>
                       </Col>
                     </Row>
                     <Row>
@@ -189,10 +189,10 @@ class SwahiliInKigali extends Component {
                     </Row>
                     <Row>
                       <Col>
-                        <img src={Elders} style={imgInterviewStyle} alt="elders_img"></img>
+                        <p>These five community elders were all born and raised in Nyamirambo. They say that they all learned Swahili not from their families but simply from talking to their friends and neighbors.</p>
                       </Col>
                       <Col>
-                        <p>These five community elders were all born and raised in Nyamirambo. They say that they all learned Swahili not from their families but simply from talking to their friends and neighbors.</p>
+                        <img src={Elders} style={imgInterviewStyle} alt="elders_img"></img>
                       </Col>
                     </Row>
                   </ModalBody>

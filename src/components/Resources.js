@@ -1,19 +1,14 @@
 import React, { Component } from 'react';
 import MapContainer from './Map.js';
 import { Container, Col, Row } from 'reactstrap';
-import ALUBanner from './image_files/alu_banner.png';
-import ALULogo from './image_files/alu_logo.png';
 import TeachRwanda from './image_files/teachr.png';
-import Marembo from './image_files/maremboc.jpg';
+import Marembo from './image_files/marembo.png';
 
 const imgStyle = {
-  maxHeight: '650px',
-  maxWidth: '400px',
+  maxHeight: '180px',
+  maxWidth: '300px',
   align: 'middle',
-}
-
-const containerStyle = {
-  Color: 'black'
+  paddingRight: '15px'
 }
 
 class Resources extends Component {
@@ -68,9 +63,6 @@ class Resources extends Component {
           </Col>
         </Row>
         <Row>
-          <Col align='center'>
-            <img src={ALUBanner} style={imgStyle} alt=""/>
-          </Col>
           <Col>
             <p>As the host institution, <b>ALU Rwanda</b> offers internship opportunities for students, including Swahili speakers, in various fields and locations. Internships range from medical care, to law and human rights, to social entrepreneurship and much more.</p>
           </Col>
@@ -83,20 +75,15 @@ class Resources extends Component {
           <img src={TeachRwanda} style={imgStyle} alt=""/>
           </Col>
         </Row>
-          <br />
-          <Row>
-            <Col>
+        <Row>
+          <Col xs="auto">
+            <img src={Marembo} style={imgStyle} alt="" />
+          </Col>
+          <Col>
             <p><b>Centre Marembo</b> is a local organization that aims to improve the lives of disadvantaged youth in Kigali through training and educational support. Additionally, some local primary and secondary schools welcome partnerships with ALU students to promote knowledge creation and sharing in the classrooms.</p>
-            </Col>
-            <Col xs="auto">
-              <img src={Marembo} style={imgStyle} alt="" />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              Additionally, some local primary and secondary schools welcome partnerships with students to promote knowledge creation and sharing in the classrooms. <b>Groupe Scolaire Gatenga</b> in Kigali is an example of a school that welcomes partnerships with students interested in Swahili. Interested students might contact Professor Harerimana Balthazar for more information.
-            </Col>
-          </Row>
+            <p>Additionally, some local primary and secondary schools welcome partnerships with students to promote knowledge creation and sharing in the classrooms. <b>Groupe Scolaire Gatenga</b> in Kigali is an example of a school that welcomes partnerships with students interested in Swahili. Interested students might contact Professor Harerimana Balthazar for more information.</p>
+          </Col>
+        </Row>
         </Container>
         <br />
       </Container>

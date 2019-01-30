@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Col, Container, Jumbotron, Row } from 'reactstrap';
+import { Col, Container, Jumbotron, Row } from 'reactstrap';
 import KiKLogo from './image_files/kik-logo.png';
 
 const imgStyle = {
@@ -32,7 +32,7 @@ class About extends Component {
         <Jumbotron align='center'>
           <h1 className="display-3">Map of Kiswahili in Kigali</h1>
           <p className="lead">This is a joint project between Middlebury College and ALU Rwanda's students.</p>
-          <iframe width='75%' height='400px' src='http://middlebury.maps.arcgis.com/apps/View/index.html?appid=edf83cac73f646438fa30de2d0a300a1&extent=29.6210,-2.1940,30.6097,-1.7061' frameborder='0' scrolling='no'></iframe>
+          <iframe title="KiswahiliMap" width='75%' height='400px' src='http://middlebury.maps.arcgis.com/apps/View/index.html?appid=edf83cac73f646438fa30de2d0a300a1&extent=29.6210,-2.1940,30.6097,-1.7061' frameborder='0' scrolling='no'></iframe>
           <hr className="my-2" />
           <p>Additional Info About Map</p>
         </Jumbotron>

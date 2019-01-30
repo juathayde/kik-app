@@ -10,29 +10,20 @@ import {
 const items = [
   {
     src: require('./image_files/group_photo.JPG'),
-    altText: '',
-    caption: ''  
+    altText: 'KiK Team'
   },
   {
     src: require('./image_files/slider1.jpg'),
-    altText: 'View of Kigali',
-    caption: 'Jan 23 2019'
+    altText: 'View of Kigali'
   },
   {
     src: require('./image_files/slider2.JPG'),
-    altText: 'Nyamirambo Afternoon',
-    caption: 'Jan 23 2019'
+    altText: 'Nyamirambo Afternoon'
   },
   {
     src: require('./image_files/slider3.JPG'),
-    altText: 'Design Session',
-    caption: 'Slide 2'
+    altText: 'Design Session'
   },
-  {
-    src: require('./image_files/slider4.JPG'),
-    altText: 'Design Session 2',
-    caption: 'Slide 3'
-  }
 ];
 
 var imgStyle = {
@@ -88,7 +79,7 @@ class Slider extends Component {
           key={item.src}
         >
           <img src={item.src} style={imgStyle} alt={item.altText} />
-          <CarouselCaption captionText={item.caption} captionHeader={item.altText} />
+          <CarouselCaption captionHeader={item.altText} />
         </CarouselItem>
       );
     });
