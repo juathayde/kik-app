@@ -23,6 +23,7 @@ var imgStyle = {
 var imgInterviewStyle = {
   maxHeight: '250px',
   maxWidth: '250px',
+  borderRadius: '10px'
 };
 
 const conStyle = {

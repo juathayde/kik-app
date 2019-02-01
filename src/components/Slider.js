@@ -7,14 +7,15 @@ import {
   CarouselCaption
 } from 'reactstrap';
 
+
 const items = [
   {
     src: require('./image_files/group_photo.JPG'),
     altText: 'KiK Team'
   },
   {
-    src: require('./image_files/slider1.jpg'),
-    altText: 'View of Kigali'
+    src: require('./image_files/kigali-map.png'),
+    altText: 'Kigali Map'
   },
   {
     src: require('./image_files/slider2.JPG'),
@@ -24,6 +25,10 @@ const items = [
     src: require('./image_files/slider3.JPG'),
     altText: 'Design Session'
   },
+  {
+    src: require('./image_files/slider1.jpg'),
+    altText: 'View of Kigali'
+  }
 ];
 
 var imgStyle = {

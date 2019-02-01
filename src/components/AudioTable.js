@@ -237,7 +237,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
     Wata tia pesa kwa accounti yako Alhmisi usiku.
   </UncontrolledTooltip>
   <UncontrolledTooltip placement="right" target="kigali3">
-    Replace text.
+    Nilichelewa kazini boss wangu akasilika.
   </UncontrolledTooltip>
   <UncontrolledTooltip placement="right" target="tanzania1">
     Nitarudi nyumbani karibuni.

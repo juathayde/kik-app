@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import MiddLogo from './image_files/midd_logo.png';
 import ALUBanner from './image_files/alu_banner.png';
-
+import ALULogo from './image_files/alu-logo2.png';
 const linkStyle = {
   color: 'black'
 };
@@ -33,7 +33,7 @@ class Contact extends Component {
           </Col>
           <Col>
             <address align='center'>
-              <img src={ALUBanner} style={bannerStyle} alt="" /><br />
+              <img src={ALULogo} style={bannerStyle} alt="" /><br />
               <b><a href="https://www.alueducation.com/campuses/alu-rwanda/" style={linkStyle}>African Leadership University Rwanda</a></b><br />
               Kigali Heights<br />
               2nd Floor, KG 7 Ave<br />
