@@ -16,21 +16,27 @@ import Yousif from './image_files/Yousif.JPG';
 var imgStyle = {
   maxHeight: '128px',
   maxWidth: '128px',
+  paddingLeft: '20px',
+  paddingTop: '10px'
 };
 
 var imgInterviewStyle = {
   maxHeight: '250px',
-  maxWidth: '300px',
+  maxWidth: '250px',
+  borderRadius: '10px'
 };
 
 const conStyle = {
   margin: '40px',
-  border: '5px solid gray'
+  border: '5px solid gray',
+  borderRadius: '25px',
+  padding: '5px',
+  backgroundColor: 'white'
 };
 
 const linkStyle = {
   color: 'black',
-  padding: '0px 0px'
+  padding: '0px'
 };
 
 class SwahiliInKigali extends Component {
@@ -148,7 +154,7 @@ class SwahiliInKigali extends Component {
                         <img src={Kayipabo} style={imgInterviewStyle} alt="kayipabo_img"></img>
                       </Col>
                       <Col>
-                        <p>Kayipabo is Rwandan but speaks Kiswahili as he went to high school and university in DRC. He now uses the languages extensively when he does business in surrounding countries and as a consultant for the World Bank. He explained that is absolutely necessary for</p>
+                        <p><b>Kayipabo</b> is Rwandan but speaks Kiswahili as he went to high school and university in DRC. He now uses the languages extensively when he does business in surrounding countries and as a consultant for the World Bank. He explained that is absolutely necessary for</p>
                       </Col>
                     </Row>
                     <Row>
@@ -184,10 +190,10 @@ class SwahiliInKigali extends Component {
                     </Row>
                     <Row>
                       <Col>
-                        <img src={Elders} style={imgInterviewStyle} alt="elders_img"></img>
+                        <p>These five community elders were all born and raised in Nyamirambo. They say that they all learned Swahili not from their families but simply from talking to their friends and neighbors.</p>
                       </Col>
                       <Col>
-                        <p>These five community elders were all born and raised in Nyamirambo. They say that they all learned Swahili not from their families but simply from talking to their friends and neighbors.</p>
+                        <img src={Elders} style={imgInterviewStyle} alt="elders_img"></img>
                       </Col>
                     </Row>
                   </ModalBody>
@@ -239,6 +245,7 @@ class SwahiliInKigali extends Component {
           </Col>
         </Row>
       </Container>
+      <br />
       </div>
     );
   }

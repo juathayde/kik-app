@@ -20,6 +20,10 @@ import Kenya1 from './audio_files/ky1.mp3';
 import Kenya2 from './audio_files/ky2.mp3';
 import Kenya3 from './audio_files/ky3.mp3';
 
+const headerStyle = {
+  textDecoration: "underline",
+  color:"black"
+}
 
 const {render} = ReactDOM;
 
@@ -233,7 +237,7 @@ const SelectAudio = ({selectedAudio, chooseSound}) =>
     Wata tia pesa kwa accounti yako Alhmisi usiku.
   </UncontrolledTooltip>
   <UncontrolledTooltip placement="right" target="kigali3">
-    Replace text.
+    Nilichelewa kazini boss wangu akasilika.
   </UncontrolledTooltip>
   <UncontrolledTooltip placement="right" target="tanzania1">
     Nitarudi nyumbani karibuni.
@@ -347,7 +351,7 @@ export default class AudioTable extends Component {
       <Container align='left'>
         <Row>
           <Col>
-          <h3><span style={{textDecoration: "underline", color:"black"}}  href="#" id="phrasebook">Phrase Book</span></h3>
+          <h3><span style={headerStyle}  href="#" id="phrasebook">Phrase Book</span></h3>
           <UncontrolledTooltip placement="right" target="phrasebook">
             Listen to Different Dialects of Swahili below!
           </UncontrolledTooltip>
@@ -355,7 +359,7 @@ export default class AudioTable extends Component {
           </Col>
         </Row>
         <Row>
-          <Col sm="12" md={{ size: 8, offset: 2 }}>
+          <Col sm="12" md={{ size: 8, offset: 2 }} style={{backgroundColor: 'white', borderRadius: '10px' }}>
       		  <audio ref={(e1) => { this.e1 = e1; }}>
         			<source src={English1} type="audio/mp4" >
         			</source>
@@ -432,9 +436,11 @@ export default class AudioTable extends Component {
           </Col>
         </Row>
       </Container>
+      <br />
       <Container>
         <Button color="secondary" onClick={this.playAudio}>Listen</Button>
       </Container>
+      <br /><br /><br />
       </div>
     );
   }
